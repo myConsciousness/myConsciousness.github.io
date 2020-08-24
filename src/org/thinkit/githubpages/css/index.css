@@ -24,3 +24,17 @@
     background-size: 100% 126px;
     margin-top: -126px;
 }
+
+#footer {
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    background-color: #2c3039;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+#copyright p {
+    color: #ffffff;
+    margin: 0px;
+}
