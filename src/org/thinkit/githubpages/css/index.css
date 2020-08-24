@@ -2,3 +2,8 @@
     margin: 0px;
     padding: 0px;
 }
+
+.navbar-brand {
+    margin-bottom: 0px;
+    margin-left: 10em;
+}
