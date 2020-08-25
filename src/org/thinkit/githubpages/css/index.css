@@ -311,3 +311,60 @@ ol {
         border-left-color: transparent;
     }
 }
+
+
+/*---------------------
+  Helper CSS
+-----------------------*/
+
+.section-title {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title.center-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title h1 {
+    font-size: 100px;
+    color: #f2f2f2;
+    font-family: 'Rockville Solid Regular';
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 100%;
+    z-index: -1;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.me {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+    color: #fff;
+}
