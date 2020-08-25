@@ -27,7 +27,6 @@ function floatySpace() {
         pts.push(p);
     }
 
-    // Canvas
     space.add({
         animate: function(time, fps, context) {
 
