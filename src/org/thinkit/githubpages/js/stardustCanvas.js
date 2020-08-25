@@ -1,3 +1,5 @@
+import { CanvasSpace } from "pts"
+
 var space;
 
 function floatySpace() {
