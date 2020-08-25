@@ -337,7 +337,7 @@ ol {
 .section-title h1 {
     font-size: 100px;
     color: #f2f2f2;
-    font-family: 'Rockville Solid Regular';
+    font-family: 'Rockville Solid';
     position: absolute;
     left: 0;
     top: -45px;
@@ -367,4 +367,8 @@ ol {
 .text-white li,
 .text-white a {
     color: #fff;
+}
+
+.highlight {
+    color: #e31b6d;
 }
