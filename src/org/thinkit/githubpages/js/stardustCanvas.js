@@ -1,4 +1,4 @@
-import { CanvasSpace } from "pts"
+Pts.namespace(window);
 
 var space;
 
