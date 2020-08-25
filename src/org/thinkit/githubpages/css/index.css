@@ -1,6 +1,204 @@
+/*---------------------
+  Common
+-----------------------*/
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Now Regular';
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #111111;
+    font-weight: 400;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Now Regular';
+    color: #444444;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*---------------------
+  Button
+-----------------------*/
+
+.primary-btn {
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 14px 25px 12px;
+    color: #ffffff;
+    background: #00c0ca;
+    letter-spacing: 2px;
+}
+
+.primary-btn.border-btn {
+    background: transparent;
+    border: 2px solid #00c0ca;
+    color: #111111;
+}
+
+.site-btn {
+    font-size: 15px;
+    color: #ffffff;
+    background: #00c0ca;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 30px;
+    width: 100%;
+}
+
+
+/*---------------------
+  Section
+-----------------------*/
+
+.section-title {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title.center-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title h1 {
+    font-size: 100px;
+    color: #f2f2f2;
+    font-family: 'Rockville Solid Regular';
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 100%;
+    z-index: -1;
+}
+
+.me {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/*---------------------
+  About
+-----------------------*/
+
+.about {
+    padding-top: 0;
+}
+
+.about.about--page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about.about--page .section-title {
+    margin-bottom: 28px;
+}
+
+.about.about--page .section-title h2 {
+    line-height: 55px;
+}
+
+.about.about--page .about--text {
+    padding-top: 15px;
+}
+
+.about.about--page .about--text p {
+    color: #111111;
+}
+
+.about--text {
+    padding-top: 110px;
+}
+
+.about--text p {
+    margin-bottom: 35px;
+}
+
+#picture-of-me img {
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
