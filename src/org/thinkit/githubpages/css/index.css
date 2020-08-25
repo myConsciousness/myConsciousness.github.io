@@ -193,14 +193,6 @@ ol {
     margin-bottom: 35px;
 }
 
-#picture-of-me img {
-    border-radius: 50%;
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
 .navbar-brand {
     font-size: 40px;
     margin-bottom: 0px;
