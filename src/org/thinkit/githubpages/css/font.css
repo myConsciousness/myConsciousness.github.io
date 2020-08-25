@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Rockville Solid';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockville Solid'), url('../font/Rockville-Solid.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Now Regular';
     font-style: normal;
     font-weight: normal;
