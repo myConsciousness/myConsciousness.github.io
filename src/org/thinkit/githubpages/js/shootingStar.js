@@ -6,15 +6,15 @@ const floatySpace = () => {
 
     space = new CanvasSpace("canvas", "#252934").display();
 
+    const center = space.size.$divide(1.8);
+    const mouse = center.clone();
+
     space.add({
         animate: function(time, fps, context) {
 
             const colors = [
                 "#FF3F8E", "#04C2C9", "#2E55C1"
             ];
-
-            const center = space.size.$divide(1.8);
-            const mouse = center.clone();
 
             const pts = getPts(center);
             const line = getLine();
