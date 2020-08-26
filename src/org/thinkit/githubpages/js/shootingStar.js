@@ -1,34 +1,24 @@
-var space;
+'use strict'
 
-function floatySpace() {
-    var colors = [
-        "#FF3F8E", "#04C2C9", "#2E55C1"
-    ];
+let space;
 
+const floatySpace = () => {
 
     space = new CanvasSpace("canvas", "#252934").display();
-    var form = new Form(space);
 
-    // Elements
-    var pts = [];
-    var center = space.size.$divide(1.8);
-    var angle = -(window.innerWidth * 0.5);
-    var count = window.innerWidth * 0.05;
-    if (count > 150) count = 150;
-    var line = new Line(0, angle).to(space.size.x, 0);
-    var mouse = center.clone();
-
-    var r = Math.min(space.size.x, space.size.y) * 1;
-    for (var i = 0; i < count; i++) {
-        var p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
-        p.moveBy(center).rotate2D(i * Math.PI / count, center);
-        p.brightness = 0.1
-        pts.push(p);
-    }
-
-    // Canvas
     space.add({
         animate: function(time, fps, context) {
+
+            const colors = [
+                "#FF3F8E", "#04C2C9", "#2E55C1"
+            ];
+
+            const center = space.size.$divide(1.8);
+            const mouse = center.clone();
+
+            const pts = getPts(center);
+            const line = getLine();
+            const form = new Form(space);
 
             for (var i = 0; i < pts.length; i++) {
                 // rotate the points slowly
@@ -66,14 +56,40 @@ function floatySpace() {
         }
     });
 
-    space.bindMouse();
-    space.play();
+    space.bindMouse().play();
+}
+
+const getPts = center => {
+
+    const pts = [];
+
+    let count = window.innerWidth * 0.05;
+
+    if (count > 150) {
+        count = 150;
+    }
+
+    const r = Math.min(space.size.x, space.size.y) * 1;
+
+    for (const i = 0; i < count; i++) {
+        const p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
+        p.moveBy(center).rotate2D(i * Math.PI / count, center);
+        p.brightness = 0.1
+        pts.push(p);
+    }
+
+    return pts;
+}
+
+const getLine = () => {
+    const angle = -(window.innerWidth * 0.5);
+    return new Line(0, angle).to(space.size.x, 0);
 }
 
 floatySpace();
 
 $(window).resize(function() {
     space.removeAll();
-    $('canvas').remove();
+    $("canvas").remove();
     floatySpace();
 });
