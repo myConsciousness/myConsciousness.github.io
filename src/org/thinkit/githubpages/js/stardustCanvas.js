@@ -7,7 +7,8 @@ function floatySpace() {
         "#FF3F8E", "#04C2C9", "#2E55C1"
     ];
 
-    space = new CanvasSpace("canvas", "#252934").setup({retina: true});
+
+    space = new CanvasSpace("canvas", "#252934").display();
     var form = new Form(space);
 
     // Elements
@@ -16,6 +17,7 @@ function floatySpace() {
     var angle = -(window.innerWidth * 0.5);
     var count = window.innerWidth * 0.05;
     if (count > 150) count = 150;
+    var line = new Line(0, angle).to(space.size.x, 0);
     var mouse = center.clone();
 
     var r = Math.min(space.size.x, space.size.y) * 1;
@@ -26,6 +28,7 @@ function floatySpace() {
         pts.push(p);
     }
 
+    // Canvas
     space.add({
         animate: function(time, fps, context) {
 
@@ -37,11 +40,11 @@ function floatySpace() {
                 form.stroke(false).fill(colors[i % 3]).point(pt, 1);
 
                 // get line from pt to the mouse line
-                var ln = Line.perpendicularFromPt(pt);
+                var ln = new Line(pt).to(line.getPerpendicularFromPoint(pt));
 
                 // opacity of line derived from distance to the line
-                var opacity = Math.min(0.8, 1 - Math.abs(Line.distanceFromPt(pt)) / r);
-                var distFromMouse = Math.abs(ln.distanceFromPt(mouse))
+                var opacity = Math.min(0.8, 1 - Math.abs(line.getDistanceFromPoint(pt)) / r);
+                var distFromMouse = Math.abs(ln.getDistanceFromPoint(mouse))
 
                 if (distFromMouse < 50) {
                     if (pts[i].brightness < 0.3) pts[i].brightness += 0.015
@@ -65,7 +68,8 @@ function floatySpace() {
         }
     });
 
-    space.bindMouse().bindTouch().play();
+    space.bindMouse();
+    space.play();
 }
 
 floatySpace();
