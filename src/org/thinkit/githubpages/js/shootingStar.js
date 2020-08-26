@@ -7,6 +7,12 @@ const floatySpace = () => {
     space = new CanvasSpace("canvas", "#252934").display();
 
     const center = space.size.$divide(1.8);
+
+    const r = Math.min(space.size.x, space.size.y) * 1;
+
+    const pts = getPts(center, r);
+    const line = getLine();
+    const form = new Form(space);
     const mouse = center.clone();
 
     space.add({
@@ -15,12 +21,6 @@ const floatySpace = () => {
             const colors = [
                 "#FF3F8E", "#04C2C9", "#2E55C1"
             ];
-
-            const r = Math.min(space.size.x, space.size.y) * 1;
-
-            const pts = getPts(center, r);
-            const line = getLine();
-            const form = new Form(space);
 
             for (let i = 0; i < pts.length; i++) {
                 // rotate the points slowly
