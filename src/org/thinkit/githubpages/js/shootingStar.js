@@ -18,7 +18,7 @@ const floatySpace = () => {
         animate: function(time, fps, context) {
 
             const colors = [
-                "#FF3F8E", "#04C2C9", "#2E55C1"
+                "#FF3F8E", "#04C2C9", "#43A4E0"
             ];
 
             for (let i = 0; i < pts.length; i++) {
@@ -69,7 +69,7 @@ const getPts = (center, r) => {
     for (let i = 0; i < count; i++) {
         const p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
         p.moveBy(center).rotate2D(i * Math.PI / count, center);
-        p.brightness = 0.1
+        p.brightness = 0.2
         pts.push(p);
     }
 
