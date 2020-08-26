@@ -372,3 +372,8 @@ ol {
 .highlight {
     color: #e31b6d;
 }
+
+#pt {
+    height: 100%;
+    width: 100%;
+}
