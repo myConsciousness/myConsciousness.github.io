@@ -1,5 +1,3 @@
-Pts.namespace(window);
-
 var space;
 
 function floatySpace() {
