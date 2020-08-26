@@ -20,7 +20,7 @@ const floatySpace = () => {
             const line = getLine();
             const form = new Form(space);
 
-            for (var i = 0; i < pts.length; i++) {
+            for (let i = 0; i < pts.length; i++) {
                 // rotate the points slowly
                 var pt = pts[i];
 
@@ -62,8 +62,7 @@ const floatySpace = () => {
 
 const getPts = center => {
 
-    const pts = [];
-
+    let pts = [];
     let count = window.innerWidth * 0.05;
 
     if (count > 150) {
@@ -72,7 +71,7 @@ const getPts = center => {
 
     const r = Math.min(space.size.x, space.size.y) * 1;
 
-    for (const i = 0; i < count; i++) {
+    for (let i = 0; i < count; i++) {
         const p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
         p.moveBy(center).rotate2D(i * Math.PI / count, center);
         p.brightness = 0.1
