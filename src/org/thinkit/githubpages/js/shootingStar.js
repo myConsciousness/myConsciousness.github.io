@@ -56,7 +56,8 @@ const floatySpace = () => {
         }
     });
 
-    space.bindMouse().play();
+    space.bindMouse();
+    space.play();
 }
 
 const getPts = center => {
