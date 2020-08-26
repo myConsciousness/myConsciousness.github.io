@@ -7,7 +7,6 @@ const floatySpace = () => {
     space = new CanvasSpace("canvas", "#252934").display();
 
     const center = space.size.$divide(1.8);
-
     const r = Math.min(space.size.x, space.size.y) * 1;
 
     const pts = getPts(center, r);
@@ -64,12 +63,8 @@ const floatySpace = () => {
 
 const getPts = (center, r) => {
 
-    let pts = [];
-    let count = window.innerWidth * 0.05;
-
-    if (count > 150) {
-        count = 150;
-    }
+    const pts = [];
+    const count = getCountPts();
 
     for (let i = 0; i < count; i++) {
         const p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
@@ -79,6 +74,11 @@ const getPts = (center, r) => {
     }
 
     return pts;
+}
+
+const getCountPts = () => {
+    const count = window.innerWidth * 0.05;
+    return count > 150 ? 150 : count;
 }
 
 const getLine = () => {
