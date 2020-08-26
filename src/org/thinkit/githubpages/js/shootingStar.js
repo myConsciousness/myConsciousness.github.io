@@ -16,7 +16,9 @@ const floatySpace = () => {
                 "#FF3F8E", "#04C2C9", "#2E55C1"
             ];
 
-            const pts = getPts(center);
+            const r = Math.min(space.size.x, space.size.y) * 1;
+
+            const pts = getPts(center, r);
             const line = getLine();
             const form = new Form(space);
 
@@ -60,7 +62,7 @@ const floatySpace = () => {
     space.play();
 }
 
-const getPts = center => {
+const getPts = (center, r) => {
 
     let pts = [];
     let count = window.innerWidth * 0.05;
@@ -68,8 +70,6 @@ const getPts = center => {
     if (count > 150) {
         count = 150;
     }
-
-    const r = Math.min(space.size.x, space.size.y) * 1;
 
     for (let i = 0; i < count; i++) {
         const p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
