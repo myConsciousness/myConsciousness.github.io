@@ -7,7 +7,7 @@ function floatySpace() {
         "#FF3F8E", "#04C2C9", "#2E55C1"
     ];
 
-    space = new CanvasSpace("canvas", "#252934").display();
+    space = new CanvasSpace("canvas", "#252934").setup({retina: true});
     var form = new Form(space);
 
     // Elements
@@ -66,8 +66,7 @@ function floatySpace() {
         }
     });
 
-    space.bindMouse();
-    space.play();
+    space.bindMouse().bindTouch().play();
 }
 
 floatySpace();
