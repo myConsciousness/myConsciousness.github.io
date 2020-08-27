@@ -8,7 +8,7 @@
     });
 
 
-    for (let i = 1; i < 9; i++) {
+    for (let i = 1; i < 10; i++) {
         $('#bar' + String(i)).barfiller({
             barColor: "#04c2c9",
         });
