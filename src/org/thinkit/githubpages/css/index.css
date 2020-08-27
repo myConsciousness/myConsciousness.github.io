@@ -88,6 +88,26 @@ ol {
   Button
 -----------------------*/
 
+.button-color-white {
+    background: transparent;
+    color: #fff;
+    float: right;
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    outline: 0;
+    padding: 10px 30px;
+}
+
+.button-color-black {
+    background: transparent;
+    color: #444957;
+    float: right;
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    outline: 0;
+    padding: 10px 30px;
+}
+
 .primary-btn {
     display: inline-block;
     font-size: 15px;
@@ -253,17 +273,21 @@ ol {
     color: #04c2c9;
 }
 
-#footer-information .fab,
-#footer-information .far {
+#footer-information .fab {
     color: #ffffff;
     font-size: 40px;
     padding-right: 10px;
 }
 
-.info-email {
+#footer-information .far,
+#footer-information .fas {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.contact-info {
     color: #ffffff;
     margin-top: -3px;
-    margin-left: 5px;
     padding: 0px;
 }
 
