@@ -190,9 +190,17 @@ ol {
 }
 
 #picture-of-me img {
+    text-align: center;
     margin-top: 20px;
+    margin-left: 60px;
     width: 70%;
     height: 70%;
+}
+
+#picture-of-me .my-position {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
 }
 
 .navbar-brand {
