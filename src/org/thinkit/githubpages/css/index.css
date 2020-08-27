@@ -119,6 +119,7 @@ ol {
 
 .button-color-turquoise:focus,
 .button-color-turquoise:hover {
+    border: 2px solid #04c2c9;
     background-color: #04c2c9;
     color: #fff;
 }
@@ -265,6 +266,7 @@ ol {
 
 .navbar-brand {
     font-size: 40px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -507,6 +509,14 @@ ol {
 #shooting-star,
 #pt {
     height: 100%;
+    width: 100%;
+}
+
+.canvas {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
