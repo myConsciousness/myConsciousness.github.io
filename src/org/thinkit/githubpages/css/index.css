@@ -254,6 +254,7 @@ ol {
 
 #portfolio {
     background-color: #f5f5f5;
+    padding-bottom: 200px;
 }
 
 .portfolio h1 {
@@ -300,10 +301,6 @@ ol {
     background-position: top center;
     background-size: 100% 126px;
     margin-top: -126px;
-}
-
-#footer {
-    margin-top: 200px;
 }
 
 #footer-information {
