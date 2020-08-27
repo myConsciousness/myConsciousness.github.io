@@ -110,7 +110,9 @@ ol {
     transition: all 0.5s;
 }
 
+.button-color-black:focus,
 .button-color-black:hover,
+.button-color-white:focus,
 .button-color-white:hover {
     background-color: #04c2c9;
     border-color: #04c2c9;
@@ -233,6 +235,11 @@ ol {
     text-align: center;
     font-size: 20px;
     margin-top: 25px;
+}
+
+#contact-me:focus,
+#contact-me:hover {
+    color: #fff;
 }
 
 .navbar-brand {
