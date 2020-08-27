@@ -235,6 +235,16 @@ ol {
     line-height: 27px;
 }
 
+#footer-information h6 {
+    font-size: 25px;
+    color: #04c2c9;
+}
+
+#footer-information .fab {
+    font-size: 40px;
+    padding-right: 10px;
+}
+
 #copyright p {
     width: 100%;
     padding: 30px 0px 30px 0px;
@@ -376,6 +386,13 @@ ol {
 
 .highlight-turquoise {
     color: #04c2c9;
+}
+
+.contact-divide {
+    width: 50px;
+    border-top: 1px solid #ffffff;
+    height: 20px;
+    margin-top: 18px;
 }
 
 #home,
