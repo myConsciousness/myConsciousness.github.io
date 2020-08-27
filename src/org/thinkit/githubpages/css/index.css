@@ -90,22 +90,32 @@ ol {
 
 .button-color-white {
     background: transparent;
+    border: 2px solid #fff;
     color: #fff;
     float: right;
     font-size: 12pt;
     margin: 5px 0 0 0;
     outline: 0;
     padding: 10px 30px;
+    transition: all 0.5s;
 }
 
 .button-color-black {
     background: transparent;
+    border: 2px solid #444957;
     color: #444957;
     float: right;
     font-size: 12pt;
     margin: 5px 0 0 0;
     outline: 0;
     padding: 10px 30px;
+    transition: all 0.5s;
+}
+
+.button-color-black:hover,
+.button-color-white:hover {
+    background-color: #04c2c9;
+    border-color: #04c2c9;
 }
 
 .primary-btn {
