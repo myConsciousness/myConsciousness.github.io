@@ -241,6 +241,7 @@ ol {
 }
 
 #footer-information .fab {
+    color: #ffffff;
     font-size: 40px;
     padding-right: 10px;
 }
@@ -388,11 +389,22 @@ ol {
     color: #04c2c9;
 }
 
-.contact-divide {
+.header-divide-black {
     width: 50px;
-    border-top: 1px solid #ffffff;
+    border-top: 3px solid #444957;
     height: 20px;
     margin-top: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header-divide-white {
+    width: 50px;
+    border-top: 3px solid #ffffff;
+    height: 20px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #home,
