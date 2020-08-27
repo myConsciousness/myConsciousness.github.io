@@ -93,36 +93,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h6>Connect With Me</h6>
-                        <div class="header-divide-white"></div>
-                        <a href="https://github.com/myConsciousness" target="_blank">
-                            <div class="fab fa-github"></div>
-                        </a>
-                        <a href="https://instagram.com/thinkit_shinya" target="_blank">
-                            <div class="fab fa-instagram"></div>
-                        </a>
-                        <a href="https://twitter.com/thinkit_shinya" target="_blank">
-                            <div class="fab fa-twitter"></div>
-                        </a>
+                        <div id="my-repository">
+                            <h6>My repository</h6>
+                            <div class="header-divide-white"></div>
+
+                            <a href="https://github.com/myConsciousness" target="_blank">
+                                <div class="fab fa-github"></div>
+                            </a>
+                        </div>
+                        <div id="my-sns" class="mt-5">
+                            <h6>Connect With Me</h6>
+                            <div class="header-divide-white"></div>
+
+                            <a href="https://instagram.com/thinkit_shinya" target="_blank">
+                                <div class="fab fa-instagram"></div>
+                            </a>
+                            <a href="https://twitter.com/thinkit_shinya" target="_blank">
+                                <div class="fab fa-twitter"></div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <h6>Contact Me</h6>
                         <div class="header-divide-white"></div>
 
-                        <div id="contact-form">
+                        <form>
                             <div class="form-group">
-                                <input placeholder="Email Address" type="email" name="email" required />
+                                <input placeholder="Your email address" type="email" class="form-control" id="form-control-email" />
                             </div>
                             <div class="form-group">
-                                <input placeholder="Name" type="text" name="name" required />
+                                <input placeholder="Title" type="text" class="form-control" id="form-control-title" />
                             </div>
                             <div class="form-group">
-                                <input placeholder="Title" type="text" name="title" required />
+                                <textarea placeholder="Write message" class="form-control" id="form-control-textarea" rows="7"></textarea>
                             </div>
-                            <div class="form-group">
-                                <textarea placeholder="Your Message" type="text" name="message" rows="6" required></textarea>
-                            </div>
-                        </div>
+                            <button type="submit" class="btn btn-primary">SEND</button>
+                        </form>
                     </div>
                 </div>
             </div>
