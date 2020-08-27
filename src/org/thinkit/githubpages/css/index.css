@@ -253,10 +253,18 @@ ol {
     color: #04c2c9;
 }
 
-#footer-information .fab {
+#footer-information .fab,
+#footer-information .far {
     color: #ffffff;
     font-size: 40px;
     padding-right: 10px;
+}
+
+.info-email {
+    color: #ffffff;
+    margin-top: -3px;
+    margin-left: 5px;
+    padding: 0px;
 }
 
 #copyright p {
