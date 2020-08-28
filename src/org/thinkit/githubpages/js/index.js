@@ -39,7 +39,7 @@
                 $('nav').addClass('fixed');
             }
 
-            if (pos < navPos && lastPos > pos) {
+            if (pos >= $('#home').offset().top) {
                 $('nav').removeClass('fixed');
             }
 
