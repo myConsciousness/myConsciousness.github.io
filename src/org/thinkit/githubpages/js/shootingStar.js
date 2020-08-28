@@ -22,17 +22,15 @@ const floatySpace = () => {
             ];
 
             for (let i = 0; i < pts.length; i++) {
-                // rotate the points slowly
+
                 var pt = pts[i];
 
                 pt.rotate2D(Const.one_degree / 40, center);
                 form.stroke(false).fill(colors[i % 4]).point(pt, 1);
 
-                // get line from pt to the mouse line
                 var ln = new Line(pt).to(line.getPerpendicularFromPoint(pt));
-
-                // opacity of line derived from distance to the line
                 var opacity = Math.min(0.8, 1 - Math.abs(line.getDistanceFromPoint(pt)) / r);
+
                 var distFromMouse = Math.abs(ln.getDistanceFromPoint(mouse))
 
                 if (distFromMouse < 50) {
