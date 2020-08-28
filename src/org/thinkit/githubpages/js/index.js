@@ -26,7 +26,7 @@
     }
 
     var navigationTop = $('nav').position().top;
-    var lastPos = 0;
+    const navigationHeight = $('nav').height;
     var lockTimer;
 
     $(window).on('scroll', function() {
@@ -36,12 +36,8 @@
         if (!isMobile) {
             if (pos - 100 > $('#home-divide').offset().top) {
                 $('nav').addClass('fixed');
-                lastPos = pos + 100;
-            } else if (pos <= navigationTop) {
+            } else if (pos + navigationHeight <= navigationTop) {
                 $('nav').removeClass('fixed');
-                lastPos = pos;
-            } else {
-                lastPos = pos;
             }
         }
 
