@@ -18,7 +18,7 @@ const floatySpace = () => {
         animate: function(time, fps, context) {
 
             const colors = [
-                "#FF3F8E", "#04C2C9", "#43A4E0"
+                "#FF3F8E", "#04C2C9", "#43A4E0", "#eeeeee"
             ];
 
             for (let i = 0; i < pts.length; i++) {
@@ -26,7 +26,7 @@ const floatySpace = () => {
                 var pt = pts[i];
 
                 pt.rotate2D(Const.one_degree / 30, center);
-                form.stroke(false).fill(colors[i % 3]).point(pt, 1);
+                form.stroke(false).fill(colors[i % 4]).point(pt, 1);
 
                 // get line from pt to the mouse line
                 var ln = new Line(pt).to(line.getPerpendicularFromPoint(pt));
