@@ -19,7 +19,9 @@
         });
     }
 
-    if (!isMobile) {
+    if (isMobile) {
+        $('nav').addClass('fixed');
+    } else {
         $('nav').addClass('desk');
     }
 
@@ -32,14 +34,16 @@
         var pos2 = pos + 50;
         var scrollBottom = pos + $(window).height();
 
-        if (pos - 100 > $('#home-divide').offset().top && lastPos < pos) {
-            $('nav').addClass('fixed');
-            lastPos = pos + 100;
-        }
+        if (!isMobile) {
+            if (pos - 100 > $('#home-divide').offset().top && lastPos < pos) {
+                $('nav').addClass('fixed');
+                lastPos = pos + 100;
+            }
 
-        if (pos < navPos && lastPos > pos) {
-            $('nav').removeClass('fixed');
-            lastPos = pos;
+            if (pos < navPos && lastPos > pos) {
+                $('nav').removeClass('fixed');
+                lastPos = pos;
+            }
         }
 
         if (pos2 > $('#home').offset().top) {
