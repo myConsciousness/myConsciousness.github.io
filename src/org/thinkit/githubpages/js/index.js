@@ -40,8 +40,10 @@
         }
 
         const sectionWindowTop = windowTop + 50;
+        let scrollHeight = $(document).height();
+        let scrollPosition = $(window).height() + $(window).scrollTop();
 
-        if (($(document).innerHeight() - $(window).innerHeight()) <= $(window).scrollTop()) {
+        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
             highlightLink('contact');
         } else if (sectionWindowTop > $('#portfolio').offset().top) {
             highlightLink('portfolio');
