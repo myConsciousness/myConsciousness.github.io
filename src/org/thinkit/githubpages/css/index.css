@@ -21,10 +21,6 @@ body {
   justify-content: center;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 h1,
 h2,
 h3,
@@ -110,6 +106,7 @@ ol {
 }
 
 .button-color-turquoise {
+  cursor: pointer;
   background: transparent;
   border: 2px solid #04c2c9;
   color: #04c2c9;
@@ -293,6 +290,7 @@ nav .active {
 }
 
 .nav-link {
+  cursor: pointer;
   border: unset;
   background-color: #eeeeee;
 }
