@@ -288,6 +288,10 @@ ol {
   Navigation
 -----------------------*/
 
+nav {
+  background: #eeeeee;
+}
+
 .nav-link {
   cursor: pointer;
   border: unset;
