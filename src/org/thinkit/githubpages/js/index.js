@@ -38,10 +38,10 @@
             if (pos - 100 > $('#home-divide').offset().top) {
                 $('nav').addClass('fixed');
                 lastPos = pos + 100;
-            }
-
-            if (pos < navPos && lastPos > pos) {
+            } else if (pos < navPos && lastPos > pos) {
                 $('nav').removeClass('fixed');
+                lastPos = pos;
+            } else {
                 lastPos = pos;
             }
         }
