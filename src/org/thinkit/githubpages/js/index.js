@@ -25,7 +25,7 @@
         $('nav').addClass('desk');
     }
 
-    var navPos = $('nav').position().top;
+    var navigationTop = $('nav').position().top;
     var lastPos = 0;
     var lockTimer;
 
@@ -38,7 +38,7 @@
             if (pos - 100 > $('#home-divide').offset().top) {
                 $('nav').addClass('fixed');
                 lastPos = pos + 100;
-            } else if (pos < navPos && lastPos > pos) {
+            } else if (pos >= navigationTop) {
                 $('nav').removeClass('fixed');
                 lastPos = pos;
             } else {
