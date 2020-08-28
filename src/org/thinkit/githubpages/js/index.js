@@ -32,13 +32,12 @@
     $(window).on('scroll', function() {
         var pos = $(window).scrollTop();
         var pos2 = pos + 50;
-        var scrollBottom = pos + $(window).height();
 
         if (!isMobile) {
             if (pos - 100 > $('#home-divide').offset().top) {
                 $('nav').addClass('fixed');
                 lastPos = pos + 100;
-            } else if (pos < navigationTop) {
+            } else if (pos <= navigationTop) {
                 $('nav').removeClass('fixed');
                 lastPos = pos;
             } else {
