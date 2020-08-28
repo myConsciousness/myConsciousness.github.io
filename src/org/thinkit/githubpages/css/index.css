@@ -684,3 +684,7 @@ nav .active {
   top: 100%;
   z-index: 9;
 }
+
+#footer {
+  margin-bottom: 0px;
+}
