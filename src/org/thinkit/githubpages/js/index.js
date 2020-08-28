@@ -35,7 +35,7 @@
         var scrollBottom = pos + $(window).height();
 
         if (!isMobile) {
-            if (pos > $('#home-divide').offset().top && lastPos < pos) {
+            if (pos2 > $('#home-divide').offset().top && lastPos < pos) {
                 $('nav').addClass('fixed');
             }
 
