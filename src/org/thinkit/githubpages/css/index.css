@@ -21,6 +21,10 @@ body {
   justify-content: center;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -272,6 +276,13 @@ ol {
 .nav-link {
   border: unset;
   background-color: #eeeeee;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  border: unset;
+  background-color: #eeeeee;
+  color: #e31b6d;
 }
 
 .navbar-brand {
