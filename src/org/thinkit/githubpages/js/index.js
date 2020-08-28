@@ -19,9 +19,7 @@
         });
     }
 
-    if (isMobile) {
-        $('nav').addClass('fixed');
-    } else {
+    if (!isMobile) {
         $('nav').addClass('desk');
     }
 
@@ -31,12 +29,10 @@
 
         let windowTop = $(window).scrollTop();
 
-        if (!isMobile) {
-            if (windowTop - 100 > $('#home-divide').offset().top) {
-                $('nav').addClass('fixed');
-            } else if (windowTop < $('#home').offset().top) {
-                $('nav').removeClass('fixed');
-            }
+        if (windowTop - 100 > $('#home-divide').offset().top) {
+            $('nav').addClass('fixed');
+        } else if (windowTop < $('#home').offset().top) {
+            $('nav').removeClass('fixed');
         }
 
         const sectionWindowTop = windowTop + 50;
