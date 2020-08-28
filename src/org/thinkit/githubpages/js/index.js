@@ -37,13 +37,13 @@
         if (!isMobile) {
             if (pos - 100 > $('#home-divide').offset().top && lastPos < pos) {
                 $('nav').addClass('fixed');
+                lastPos = pos + 100;
             }
 
-            if (pos >= $('#home').offset().top) {
+            if (pos < navPos && lastPos > pos) {
                 $('nav').removeClass('fixed');
+                lastPos = pos;
             }
-
-            lastPos = pos;
         }
 
         if (pos2 > $('#home').offset().top) {
