@@ -288,22 +288,6 @@ ol {
   Navigation
 -----------------------*/
 
-nav.fixed {
-  bottom: inherit;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-nav.fixed.desk {
-  animation: popDown 1s;
-}
-
-nav .active {
-  color: #e31b6d;
-}
-
 .nav-link {
   cursor: pointer;
   border: unset;
@@ -331,10 +315,15 @@ nav.fixed {
   left: 0;
   position: fixed;
   top: 0;
+  width: 100%;
 }
 
 nav.fixed.desk {
-  animation: popDown 1s;
+  animation: popDown 1.3s;
+}
+
+nav .active {
+  color: #e31b6d;
 }
 
 .jumbotron {
