@@ -90,6 +90,12 @@ ol {
   margin: 0;
 }
 
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+
 /*---------------------
   Button
 -----------------------*/
@@ -198,6 +204,10 @@ ol {
   About
 -----------------------*/
 
+#about {
+  margin-top: 30px;
+}
+
 .about {
   padding-top: 0;
 }
@@ -282,7 +292,7 @@ nav.fixed {
 }
 
 nav.fixed.desk {
-  animation: popDown 0.5s;
+  animation: popDown 1s;
 }
 
 nav .active {
@@ -319,7 +329,7 @@ nav.fixed {
 }
 
 nav.fixed.desk {
-  animation: popDown 0.5s;
+  animation: popDown 1s;
 }
 
 .jumbotron {
