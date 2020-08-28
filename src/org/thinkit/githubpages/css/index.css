@@ -90,6 +90,10 @@ ol {
   margin: 0;
 }
 
+/*---------------------
+  Key Frames
+-----------------------*/
+
 @keyframes popDown {
   0% {
     transform: translateY(-100px);
