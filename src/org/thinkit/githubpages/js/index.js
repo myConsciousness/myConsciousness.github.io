@@ -38,7 +38,7 @@
             if (pos - 100 > $('#home-divide').offset().top) {
                 $('nav').addClass('fixed');
                 lastPos = pos + 100;
-            } else if (pos >= navigationTop) {
+            } else if (pos < navigationTop) {
                 $('nav').removeClass('fixed');
                 lastPos = pos;
             } else {
