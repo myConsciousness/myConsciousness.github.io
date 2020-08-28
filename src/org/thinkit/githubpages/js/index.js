@@ -2,6 +2,8 @@
 
 (function($) {
 
+    fadeOutPreLoader();
+
     var isMobile;
 
     if (
@@ -17,7 +19,11 @@
         });
     }
 
-    fadeOutPreLoader();
+    if (isMobile) {
+        $('nav').addClass('fixed');
+    } else {
+        $('nav').addClass('desk');
+    }
 
     var navPos = $('nav').position().top;
     var lastPos = 0;
@@ -91,12 +97,12 @@
         $('.page-link').click(function() {
             var anchor = $(this).attr('destination');
 
-            // $('.link-wrap').removeClass('visible');
-            // $('nav span').removeClass('active');
+            $('.link-wrap').removeClass('visible');
+            $('nav span').removeClass('active');
 
-            // $('nav')
-            //     .find('[dest="' + anchor + '"]')
-            //     .addClass('active');
+            $('nav')
+                .find('[dest="' + anchor + '"]')
+                .addClass('active');
 
             $('html, body').animate({
                     scrollTop: $('#' + anchor).offset().top

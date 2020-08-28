@@ -311,6 +311,17 @@ nav .active {
   background-color: #eeeeee;
 }
 
+nav.fixed {
+  bottom: inherit;
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+
+nav.fixed.desk {
+  animation: popDown 0.5s;
+}
+
 .jumbotron {
   background-color: #eeeeee;
 }
