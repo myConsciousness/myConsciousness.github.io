@@ -288,10 +288,6 @@ ol {
   Navigation
 -----------------------*/
 
-nav {
-  background: #eeeeee;
-}
-
 .nav-link {
   cursor: pointer;
   border: unset;
@@ -320,9 +316,7 @@ nav.fixed {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-nav.fixed.desk {
+  z-index: 10;
   animation: popDown 1.3s;
 }
 

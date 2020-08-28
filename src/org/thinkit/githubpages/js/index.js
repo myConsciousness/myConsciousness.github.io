@@ -4,23 +4,15 @@
 
     fadeOutPreLoader();
 
-    var isMobile;
-
     if (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
             navigator.userAgent
         )
     ) {
-        isMobile = true;
-
         $('.height-fix').each(function() {
             var h = $(this).height();
             $(this).height(h);
         });
-    }
-
-    if (!isMobile) {
-        $('nav').addClass('desk');
     }
 
     var lockTimer;
