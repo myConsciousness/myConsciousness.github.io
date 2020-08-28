@@ -36,7 +36,7 @@
         if (!isMobile) {
             if (pos - 100 > $('#home-divide').offset().top) {
                 $('nav').addClass('fixed');
-            } else if (pos + navigationHeight <= navigationTop) {
+            } else if (pos <= navigationTop + navigationHeight) {
                 $('nav').removeClass('fixed');
             }
         }
