@@ -16,6 +16,7 @@
             $(this).height(h);
         });
     }
+
     fadeOutPreLoader();
 
     var navPos = $('nav').position().top;

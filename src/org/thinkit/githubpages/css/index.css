@@ -273,6 +273,25 @@ ol {
   margin-bottom: 20px;
 }
 
+/*---------------------
+  Navigation
+-----------------------*/
+
+nav.fixed {
+  bottom: inherit;
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+
+nav.fixed.desk {
+  animation: popDown 0.5s;
+}
+
+nav .active {
+  color: #e31b6d;
+}
+
 .nav-link {
   border: unset;
   background-color: #eeeeee;
@@ -282,7 +301,6 @@ ol {
 .nav-link:hover {
   border: unset;
   background-color: #eeeeee;
-  color: #e31b6d;
 }
 
 .navbar-brand {
