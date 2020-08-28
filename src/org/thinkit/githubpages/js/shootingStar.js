@@ -25,7 +25,7 @@ const floatySpace = () => {
                 // rotate the points slowly
                 var pt = pts[i];
 
-                pt.rotate2D(Const.one_degree / 30, center);
+                pt.rotate2D(Const.one_degree / 40, center);
                 form.stroke(false).fill(colors[i % 4]).point(pt, 1);
 
                 // get line from pt to the mouse line
@@ -69,7 +69,7 @@ const getPts = (center, r) => {
     for (let i = 0; i < count; i++) {
         const p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
         p.moveBy(center).rotate2D(i * Math.PI / count, center);
-        p.brightness = 0.2
+        p.brightness = 0.3
         pts.push(p);
     }
 
