@@ -35,11 +35,11 @@
         var scrollBottom = pos + $(window).height();
 
         if (!isMobile) {
-            if (pos > $('#home-divide').offset().top && pos >= navPos + $('nav').height() && lastPos < pos) {
+            if (pos > $('#home-divide').offset().top && lastPos < pos) {
                 $('nav').addClass('fixed');
             }
 
-            if (pos <= $('#home-divide').offset().top && pos < navPos && lastPos > pos) {
+            if (pos < navPos && lastPos > pos) {
                 $('nav').removeClass('fixed');
             }
 
