@@ -40,7 +40,7 @@
                 lastPos = pos + 100;
             }
 
-            if (pos >= $('#home').offset().top) {
+            if (pos < navPos && lastPos > pos) {
                 $('nav').removeClass('fixed');
                 lastPos = pos;
             }
