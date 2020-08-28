@@ -25,38 +25,30 @@
         $('nav').addClass('desk');
     }
 
-    var navigationTop = $('nav').position().top;
     var lockTimer;
 
     $(window).on('scroll', function() {
-        var pos = $(window).scrollTop();
-        var pos2 = pos + 50;
+
+        let windowTop = $(window).scrollTop();
 
         if (!isMobile) {
-            if (pos - 100 > $('#home-divide').offset().top) {
+            if (windowTop - 100 > $('#home-divide').offset().top) {
                 $('nav').addClass('fixed');
-            } else if (pos < $('#home').offset().top) {
+            } else if (windowTop < $('#home').offset().top) {
                 $('nav').removeClass('fixed');
             }
         }
 
-        if (pos2 > $('#home').offset().top) {
-            highlightLink('home');
-        }
+        const sectionWindowTop = windowTop + 50;
 
-        if (pos2 > $('#about').offset().top) {
-            highlightLink('about');
-        }
-
-        if (pos2 > $('#portfolio').offset().top) {
-            highlightLink('portfolio');
-        }
-
-        if (
-            pos2 > $('#contact').offset().top ||
-            pos + $(window).height() === $(document).height()
-        ) {
+        if (($(document).innerHeight() - $(window).innerHeight()) <= $(window).scrollTop()) {
             highlightLink('contact');
+        } else if (sectionWindowTop > $('#portfolio').offset().top) {
+            highlightLink('portfolio');
+        } else if (sectionWindowTop > $('#about').offset().top) {
+            highlightLink('about');
+        } else {
+            highlightLink('home');
         }
 
         // Prevent Hover on Scroll
