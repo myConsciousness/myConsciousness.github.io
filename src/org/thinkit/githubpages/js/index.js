@@ -70,10 +70,8 @@
 
     function scrollSmoothly() {
         $('.page-link').click(function() {
-            var anchor = $(this).attr('destination');
 
-            $('.link-wrap').removeClass('visible');
-            $('nav span').removeClass('active');
+            const anchor = $(this).attr('destination');
 
             $('nav')
                 .find('[destination="' + anchor + '"]')
