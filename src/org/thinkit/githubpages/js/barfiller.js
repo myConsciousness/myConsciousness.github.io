@@ -14,6 +14,9 @@
 
 'use strict'
 
+/**
+ * スキルセット
+ */
 const SKILL_SET = {
     'Java 7 ~ 14': 95,
     'HTML5': 80,
@@ -27,6 +30,9 @@ const SKILL_SET = {
     'Spring Boot': 70
 }
 
+/**
+ * スキルセットを基にスキルバーを生成しHTMLへ出力します。
+ */
 const createSkillBars = () => {
 
     const skillBarsObject = document.getElementById('skill-bars');
@@ -54,6 +60,9 @@ createSkillBars();
 
     fillSkillBars();
 
+    /**
+     * HTMLで設定された "data-percentage" の値を基にスキルバーを出力します。
+     */
     function fillSkillBars() {
         for (let i = 1, count = Object.keys(SKILL_SET).length; i <= count; i++) {
             $('#bar' + String(i)).barfiller({
