@@ -15,6 +15,7 @@
         });
     }
 
+
     var lockTimer;
 
     $(window).on('scroll', function() {
