@@ -1096,7 +1096,6 @@ aside:hover ul li:nth-child(3) {
 }
 
 .mind-card-wrapper {
-    border: unset;
     width: 1000px;
     position: relative;
     display: flex;
@@ -1106,6 +1105,7 @@ aside:hover ul li:nth-child(3) {
 .mind-card-wrapper .card {
     position: relative;
     cursor: pointer;
+    border: unset;
 }
 
 .mind-card-wrapper .card .face {
