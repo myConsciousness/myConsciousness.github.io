@@ -78,7 +78,7 @@
             $('nav span').removeClass('active');
 
             $('nav')
-                .find('[dest="' + anchor + '"]')
+                .find('[destination="' + anchor + '"]')
                 .addClass('active');
 
             $('html, body').animate({
