@@ -6,7 +6,7 @@ const floatySpace = () => {
 
     space = new CanvasSpace("canvas", "#252934").display();
 
-    const center = space.size.$divide(2.0);
+    const center = space.size.$divide(2.2);
     const r = Math.min(space.size.x, space.size.y) * 1;
 
     const pts = getPts(center, r);
