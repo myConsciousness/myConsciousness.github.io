@@ -15,7 +15,6 @@
         });
     }
 
-
     var lockTimer;
 
     $(window).on('scroll', function() {
@@ -42,8 +41,8 @@
             highlightLink('home');
         }
 
-        // Prevent Hover on Scroll
         clearTimeout(lockTimer);
+
         if (!$('body').hasClass('disable-hover')) {
             $('body').addClass('disable-hover');
         }
@@ -61,7 +60,6 @@
     });
 
     scrollSmoothly();
-    fillBars(10);
 
     function fadeOutPreLoader() {
         $(window).on('load', function() {
