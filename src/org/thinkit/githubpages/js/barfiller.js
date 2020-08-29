@@ -35,3 +35,16 @@ const createSkillBars = () => {
 }
 
 createSkillBars();
+
+(function($) {
+
+    fillSkillBars();
+
+    function fillSkillBars() {
+        for (let i = 1, count = Object.keys(SKILL_SET).length; i <= count; i++) {
+            $('#bar' + String(i)).barfiller({
+                barColor: "#04c2c9",
+            });
+        }
+    }
+})(jQuery);

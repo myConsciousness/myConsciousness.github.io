@@ -88,13 +88,4 @@
             );
         });
     }
-
-    function fillBars(count) {
-        for (let i = 1; i < count; i++) {
-            $('#bar' + String(i)).barfiller({
-                barColor: "#04c2c9",
-            });
-        }
-    }
-
 })(jQuery);
