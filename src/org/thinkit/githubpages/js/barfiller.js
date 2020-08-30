@@ -24,10 +24,9 @@ const SKILL_SET = {
     'JavaScript ES6': 90,
     'Python 3.x': 75,
     'Oracle SQL': 80,
-    'Struts': 95,
+    'Struts': 90,
     'Spring Boot': 85,
     'Bootstrap': 85,
-    'Spring Boot': 70,
     'Abdroid': 75
 }
 
