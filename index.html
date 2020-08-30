@@ -1,167 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Kato Shinya</title>
-    <meta
-      name="description"
-      content="This is the website of full-stack Web developer Shinya Kato."
-    />
+    <meta name="description" content="This is the website of full-stack Web developer Shinya Kato." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="robots" content="noindex,follow" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="./src/org/thinkit/githubpages/css/preloader.css"
-    />
+    <link rel="stylesheet" href="./src/org/thinkit/githubpages/css/preloader.css" />
     <link rel="stylesheet" href="./src/org/thinkit/githubpages/css/font.css" />
     <link rel="stylesheet" href="./src/org/thinkit/githubpages/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="./src/org/thinkit/githubpages/css/profile-card.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./src/org/thinkit/githubpages/css/sns-logo-color.css"
-    />
-  </head>
+    <link rel="stylesheet" href="./src/org/thinkit/githubpages/css/profile-card.css" />
+    <link rel="stylesheet" href="./src/org/thinkit/githubpages/css/sns-logo-color.css" />
+    <link rel="stylesheet" href="./src/org/thinkit/githubpages/css/barfiller.css" />
+</head>
 
-  <body>
+<body>
     <section id="shooting-star" class="flex">
-      <div id="pt" class="canvas"></div>
+        <div id="pt" class="canvas"></div>
 
-      <div cass="flex height-fix">
-        <div class="button page-link fill-button" destination="home">
-          WELCOME TO MY WEBSITE
+        <div cass="flex height-fix">
+            <div class="button page-link fill-button" destination="home">
+                WELCOME TO MY WEBSITE
+            </div>
         </div>
-      </div>
     </section>
 
     <div id="preloder">
-      <div class="loader"></div>
+        <div class="loader"></div>
     </div>
 
     <section id="home" name="home">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <span class="navbar-brand h1">ThinkIT</span>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <span class="navbar-brand h1">ThinkIT</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <div class="page-link nav-link" destination="shooting-star">
-                Home<span class="sr-only">(current)</span>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="page-link nav-link" destination="about">
-                About
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="page-link nav-link" destination="portfolio">
-                Portfolio
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="page-link nav-link" destination="contact">
-                Contact
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <div class="page-link nav-link" destination="shooting-star">
+                            Home<span class="sr-only">(current)</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="page-link nav-link" destination="about">
+                            About
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="page-link nav-link" destination="portfolio">
+                            Portfolio
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="page-link nav-link" destination="contact">
+                            Contact
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-      <div class="jumbotron jumbotron-fluid"></div>
-      <div id="home-divide" class="white-divide"></div>
+        <div class="jumbotron jumbotron-fluid"></div>
+        <div id="home-divide" class="white-divide"></div>
     </section>
 
     <section id="about" class="about me" name="about">
-      <div class="container">
-        <h1>ABOUT</h1>
+        <div class="container">
+            <h1>ABOUT</h1>
 
-        <div class="header-divide-black-center mb-5"></div>
+            <div class="header-divide-black-center mb-5"></div>
 
-        <aside id="profile-card" class="profile-card">
-          <header>
-            <a href="https://github.com/myConsciousness">
-              <img src="./src/org/thinkit/githubpages/img/me.png" />
-            </a>
+            <aside id="profile-card" class="profile-card">
+                <header>
+                    <a href="https://github.com/myConsciousness">
+                        <img src="./src/org/thinkit/githubpages/img/me.png" />
+                    </a>
 
-            <h1>Kato Shinya</h1>
+                    <h1>Kato Shinya</h1>
 
-            <h2>- Full Stack Web Developer -</h2>
-          </header>
+                    <h2>- Full Stack Web Developer -</h2>
+                </header>
 
-          <div class="profile-bio">
-            <p>Hello there!</p>
-            <p class="text-center">
-              I'm a full-stack Web Developer who is specialized in designing and
-              creating Java-based web applications and business improvement
-              tools.
-            </p>
-          </div>
+                <div class="profile-bio">
+                    <p>Hello there!</p>
+                    <p class="text-center">
+                        I'm a full-stack Web Developer who is specialized in designing and creating Java-based web applications and business improvement tools.
+                    </p>
+                </div>
 
-          <ul class="profile-social-links">
-            <li>
-              <a href="https://github.com/myConsciousness" target="_blank">
-                <div class="color-github fab fa-github"></div>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com/thinkit_shinya" target="_blank">
-                <div class="color-instagram fab fa-instagram"></div>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/thinkit_shinya" target="_blank">
-                <div class="color-twitter fab fa-twitter"></div>
-              </a>
-            </li>
-          </ul>
-        </aside>
+                <ul class="profile-social-links">
+                    <li>
+                        <a href="https://github.com/myConsciousness" target="_blank">
+                            <div class="color-github fab fa-github"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/thinkit_shinya" target="_blank">
+                            <div class="color-instagram fab fa-instagram"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/thinkit_shinya" target="_blank">
+                            <div class="color-twitter fab fa-twitter"></div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
 
-        <div class="row mt-5">
-          <div class="col-md-6">
-            <div class="about--text">
-              <div class="section-title">
-                <h2 class="text-center">Skills</h2>
-                <h1>Experience</h1>
-              </div>
-              <p>
-                I have been involved in the design and development of various
-                web applications and business improvement tools, mainly in Java.
-                The skill graph is not the whole story of my development, but
-                these are main skills I have.<br /><br />
-                I have built a desktop app that uses Python for crawling and
-                scraping. I also have experience developing and releasing
-                Android apps to the Play Store. Basically I design and create
-                Java-based web applications, but I am also interested in the
-                Python, Android fields and UI design.<br /><br />
-                <strong
-                  ><a
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="about--text">
+                        <div class="section-title">
+                            <h2 class="text-center">Skills</h2>
+                            <h1>Experience</h1>
+                        </div>
+                        <p>
+                            I have been involved in the design and development of various web applications and business improvement tools, mainly in Java. The skill graph is not the whole story of my development, but these are main skills I have.<br /><br
+                            /> I have built a desktop app that uses Python for crawling and scraping. I also have experience developing and releasing Android apps to the Play Store. Basically I design and create Java-based web applications, but I am also
+                            interested in the Python, Android fields and UI design.<br /><br />
+                            <strong><a
                     href="https://github.com/myConsciousness/myConsciousness/blob/master/details/MySkills.md"
                     target="_blank"
                     >For a more detailed skill set, see here.</a
@@ -296,68 +261,48 @@
                     <div class="contact-info">Email:</div>
                     <address class="contact-info">
                       <strong>kato.shinya.dev@gmail.com</strong>
-                    </address>
-                  </div>
+                            </address>
+                    </div>
                 </div>
 
                 <div class="row mt-3">
-                  <div class="col-md-2">
-                    <div class="fas fa-mobile-alt"></div>
-                  </div>
-                  <div class="col-md-10">
-                    <div class="contact-info">Phone:</div>
-                    <div class="contact-info"><strong>Ask me!</strong></div>
-                  </div>
+                    <div class="col-md-2">
+                        <div class="fas fa-mobile-alt"></div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="contact-info">Phone:</div>
+                        <div class="contact-info"><strong>Ask me!</strong></div>
+                    </div>
                 </div>
-              </div>
             </div>
-
-            <div class="col-md-6">
-              <h6>Contact Me</h6>
-              <div class="header-divide-white"></div>
-
-              <form>
-                <div class="form-group">
-                  <input
-                    placeholder="Your email address"
-                    type="email"
-                    class="form-control"
-                    id="form-control-email"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    placeholder="Title"
-                    type="text"
-                    class="form-control"
-                    id="form-control-title"
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    placeholder="Write message"
-                    class="form-control"
-                    id="form-control-textarea"
-                    rows="12"
-                  ></textarea>
-                </div>
-                <input
-                  type="submit"
-                  class="button-color-white float-right"
-                  value="SEND"
-                />
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="col-md-6">
+            <h6>Contact Me</h6>
+            <div class="header-divide-white"></div>
+
+            <form>
+                <div class="form-group">
+                    <input placeholder="Your email address" type="email" class="form-control" id="form-control-email" />
+                </div>
+                <div class="form-group">
+                    <input placeholder="Title" type="text" class="form-control" id="form-control-title" />
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Write message" class="form-control" id="form-control-textarea" rows="12"></textarea>
+                </div>
+                <input type="submit" class="button-color-white float-right" value="SEND" />
+            </form>
+        </div>
+        </div>
+        </div>
+        </div>
     </section>
 
     <section id="footer">
-      <div id="copyright">
-        <p>
-          <span class="highlight-turquoise"
-            >Copyright © 2020 Kato Shinya All Rights Reserved.</span
+        <div id="copyright">
+            <p>
+                <span class="highlight-turquoise">Copyright © 2020 Kato Shinya All Rights Reserved.</span
           >
         </p>
       </div>
