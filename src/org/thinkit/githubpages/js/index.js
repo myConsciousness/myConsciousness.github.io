@@ -70,6 +70,9 @@
 
             const anchor = $(this).attr('destination');
 
+            $('.link-wrap').removeClass('visible');
+            $('nav span').removeClass('active');
+
             $('nav')
                 .find('[destination="' + anchor + '"]')
                 .addClass('active');
