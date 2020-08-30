@@ -3,6 +3,7 @@ nav {
   left: 0;
   position: absolute;
   background: #1b242f;
+  color: #fff;
   border-bottom: 3px solid #04c2c9;
   height: 50px;
   text-align: left;
@@ -15,10 +16,7 @@ nav.fixed {
   left: 0;
   position: fixed;
   top: 0;
-}
-
-nav.fixed.desk {
-  animation: popDown 0.5s;
+  animation: popDown 1s;
 }
 
 nav .link-wrap {
@@ -37,12 +35,11 @@ nav .link-wrap.visible {
 }
 
 nav .link-wrap div {
-  color: #fff;
   cursor: pointer;
   font-size: 12pt;
   padding: 12px 20px;
   text-transform: uppercase;
-  transition: color 0.5s;
+  transition: color 1s;
 }
 
 nav .link-wrap div:first-child {
@@ -53,6 +50,21 @@ nav .link-wrap div:hover {
   color: #e31b6d;
 }
 
+nav .mdi-menu {
+  font-size: 30pt;
+  line-height: 36pt;
+  margin: auto 0;
+  position: absolute;
+  right: 5vw;
+  top: 0;
+}
+
 nav .active {
   color: #e31b6d;
+}
+
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
 }

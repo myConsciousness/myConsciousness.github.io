@@ -21,6 +21,14 @@ body {
   justify-content: center;
 }
 
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
 h1,
 h2,
 h3,
@@ -88,16 +96,6 @@ ul,
 ol {
   padding: 0;
   margin: 0;
-}
-
-/*---------------------
-  Key Frames
------------------------*/
-
-@keyframes popDown {
-  0% {
-    transform: translateY(-100px);
-  }
 }
 
 /*---------------------
