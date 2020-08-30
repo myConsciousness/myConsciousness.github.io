@@ -21,7 +21,7 @@ const SKILL_SET = {
     'Java 7 ~ 14': 95,
     'HTML5': 80,
     'CSS3': 70,
-    'Scss': 70,
+    'Scss': 65,
     'JavaScript ES6': 90,
     'Python 3.x': 75,
     'Oracle SQL': 80,
