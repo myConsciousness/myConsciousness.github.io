@@ -10,8 +10,7 @@
         )
     ) {
         $('.height-fix').each(function() {
-            var h = $(this).height();
-            $(this).height(h);
+            $(this).height($(this).height());
         });
     }
 
@@ -28,10 +27,8 @@
         }
 
         const sectionWindowTop = windowTop + 50;
-        let scrollHeight = $(document).height();
-        let scrollPosition = $(window).height() + $(window).scrollTop();
 
-        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             highlightLink('contact');
         } else if (sectionWindowTop > $('#portfolio').offset().top) {
             highlightLink('portfolio');
