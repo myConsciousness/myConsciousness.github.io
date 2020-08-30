@@ -26,7 +26,7 @@ const SKILL_SET = {
     'Oracle SQL': 80,
     'Struts': 90,
     'Spring Boot': 85,
-    'Bootstrap': 85,
+    'Bootstrap': 70,
     'Abdroid': 75
 }
 
