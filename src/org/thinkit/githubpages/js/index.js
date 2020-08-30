@@ -16,7 +16,7 @@
 
     var lockTimer;
 
-    $(window).on('scroll', function() {
+    $(window).scroll(function() {
 
         let windowTop = $(window).scrollTop();
 
@@ -28,7 +28,7 @@
 
         const sectionWindowTop = windowTop + 50;
 
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        if (window.pageYOffset + window.innerHeight === document.height) {
             highlightLink('contact');
         } else if (sectionWindowTop > $('#portfolio').offset().top) {
             highlightLink('portfolio');
