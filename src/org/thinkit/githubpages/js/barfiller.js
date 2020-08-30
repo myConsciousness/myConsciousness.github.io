@@ -27,7 +27,8 @@ const SKILL_SET = {
     'Struts': 95,
     'Spring Boot': 85,
     'Bootstrap': 85,
-    'Spring Boot': 70
+    'Spring Boot': 70,
+    'Abdroid': 75
 }
 
 /**
