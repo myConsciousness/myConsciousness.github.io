@@ -44,7 +44,7 @@ const createSkillBars = () => {
     Object.keys(SKILL_SET).forEach(function(skill) {
         skillSet +=
             `<div class="skill-bar-item">
-                <p>${skill}</p>
+                <p><strong>${skill}</strong></p>
                 <div id="bar${++count}" class="barfiller">
                     <span class="tip"></span>
                     <span class="fill" data-percentage="${SKILL_SET[skill]}"></span>
