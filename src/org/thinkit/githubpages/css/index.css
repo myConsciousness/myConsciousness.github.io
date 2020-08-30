@@ -10,8 +10,11 @@
 html,
 body {
   height: 100%;
+  color: #fff;
   font-family: "Now Regular";
+  font-size: 8pt;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flex {
@@ -531,8 +534,4 @@ ol {
   border: 2px solid #04c2c9;
   background-color: #04c2c9;
   color: #fff;
-}
-
-#footer {
-  margin-bottom: 0px;
 }
