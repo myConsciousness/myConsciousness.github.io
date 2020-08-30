@@ -750,12 +750,16 @@ nav .active {
   Profile Card
 -----------------------*/
 
+#profile-card {
+    margin-bottom: 150px;
+}
+
 header img {
     border-radius: 50%;
     margin: 20px auto;
     display: block;
     width: 200px;
-    border: 5px solid #fff;
+    border: 3px solid #fff;
 }
 
 aside {
