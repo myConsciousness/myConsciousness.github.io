@@ -284,46 +284,6 @@ ol {
   margin-bottom: 20px;
 }
 
-/*---------------------
-  Navigation
------------------------*/
-
-.nav-link {
-  cursor: pointer;
-  border: unset;
-  background-color: #eeeeee;
-}
-
-.nav-link:focus,
-.nav-link:hover {
-  border: unset;
-  background-color: #eeeeee;
-}
-
-.navbar-brand {
-  font-size: 40px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.navbar {
-  background-color: #eeeeee;
-}
-
-nav.fixed {
-  bottom: inherit;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  animation: popDown 1.3s;
-}
-
-nav .active {
-  color: #e31b6d;
-}
-
 .jumbotron {
   background-color: #eeeeee;
 }
