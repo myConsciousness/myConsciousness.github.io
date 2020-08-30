@@ -13,9 +13,12 @@
 */
 
 .nav-link {
+  font-size: 20px;
   cursor: pointer;
   border: unset;
   background-color: #eeeeee;
+  margin-right: 20px;
+  padding-top: 20px;
 }
 
 .nav-link:focus,
@@ -44,6 +47,7 @@ nav.fixed {
   animation: popDown 1.3s;
 }
 
-nav .active {
-  color: #e31b6d;
+.navbar-toggler {
+  margin: 0 0 0 auto;
+  transform: translate(0, 0);
 }
