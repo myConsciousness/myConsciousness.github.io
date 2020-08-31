@@ -38,7 +38,7 @@ const createMindList = () => {
         mindList +=
             `<div class="col-md-4 col-sm-6 mind">
                 <div class="${MIND_SET[mind][0]}"></div>
-                <h3 class="mind-title">${mind}</h3>
+                <h3 class="mind-title"><strong>${mind}</strong></h3>
                 <p class="mind-description">
                     ${MIND_SET[mind][1]}
                 </p>
