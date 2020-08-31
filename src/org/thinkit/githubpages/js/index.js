@@ -16,10 +16,6 @@
 
     scrollSmoothly();
 
-    $('.fa-bars').click(function() {
-        $('.link-wrap').toggleClass('visible');
-    });
-
     let lockTimer;
 
     $(window).scroll(function() {
@@ -62,6 +58,10 @@
                 .find('[destination="' + anchor + '"]')
                 .addClass('active');
         }
+    });
+
+    $('.fa-bars').click(function() {
+        $('.link-wrap').toggleClass('visible');
     });
 
     function fadeOutPreLoader() {
