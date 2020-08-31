@@ -27,7 +27,7 @@
         let windowTop = $(window).scrollTop();
         const sectionAboutTop = $('#about').offset().top;
 
-        if (windowTop === sectionAboutTop) {
+        if (windowTop >= sectionAboutTop) {
             $('nav').addClass('fixed');
         } else if (windowTop + 50 < sectionAboutTop) {
             $('nav').removeClass('fixed');
