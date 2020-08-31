@@ -19,10 +19,11 @@
     $(window).scroll(function() {
 
         let windowTop = $(window).scrollTop();
+        const sectionAboutTop = $('#about').offset().top;
 
-        if (windowTop > $('#about').offset().top) {
+        if (windowTop > sectionAboutTop) {
             $('nav').addClass('fixed');
-        } else if (windowTop + 50 < $('#about').offset().top) {
+        } else if (windowTop + 50 < sectionAboutTop) {
             $('nav').removeClass('fixed');
         }
 
