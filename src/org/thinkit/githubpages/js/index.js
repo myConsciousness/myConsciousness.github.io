@@ -20,9 +20,9 @@
 
         let windowTop = $(window).scrollTop();
 
-        if (windowTop - 100 > $('#home-divide').offset().top) {
+        if (windowTop > $('#about').offset().top) {
             $('nav').addClass('fixed');
-        } else if (windowTop < $('#home').offset().top) {
+        } else if (windowTop < $('#about').offset().top) {
             $('nav').removeClass('fixed');
         }
 
