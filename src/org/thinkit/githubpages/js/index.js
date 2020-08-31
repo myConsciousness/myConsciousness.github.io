@@ -35,7 +35,8 @@
 
         const sectionWindowTop = windowTop + 50;
 
-        if (window.pageYOffset + window.innerHeight === document.height) {
+        if (sectionWindowTop > $('#contact').offset().top ||
+            windowTop + $(window).height() === $(document).height()) {
             highlightLink('contact');
         } else if (sectionWindowTop > $('#portfolio').offset().top) {
             highlightLink('portfolio');
