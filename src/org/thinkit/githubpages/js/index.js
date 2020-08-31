@@ -14,6 +14,17 @@
         });
     }
 
+    scrollSmoothly();
+
+    $('#welcome').click(function() {
+        $('nav').addClass('fixed');
+    });
+
+    $('.fa-bars').click(function() {
+        $('.link-wrap').toggleClass('visible');
+    });
+
+
     let lockTimer;
 
     $(window).scroll(function() {
@@ -55,16 +66,6 @@
                 .find('[destination="' + anchor + '"]')
                 .addClass('active');
         }
-    });
-
-    scrollSmoothly();
-
-    $('#welcome').click(function() {
-        $('nav').addClass('fixed');
-    });
-
-    $('.fa-bars').click(function() {
-        $('.link-wrap').toggleClass('visible');
     });
 
     function fadeOutPreLoader() {
