@@ -541,5 +541,6 @@ ol {
 @media screen and (max-width: 480px) {
   #shooting-star .button {
     font-size: 12pt;
+    margin: 0px;
   }
 }
