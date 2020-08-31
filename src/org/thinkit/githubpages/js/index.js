@@ -59,6 +59,10 @@
 
     scrollSmoothly();
 
+    $('#welcome').click(function() {
+        $('nav').addClass('fixed');
+    });
+
     $('.fa-bars').click(function() {
         $('.link-wrap').toggleClass('visible');
     });
