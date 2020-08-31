@@ -544,10 +544,6 @@ ol {
   font-size: 80px;
 }
 
-.mind {
-  width: 200px;
-}
-
 .mind-title {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -565,5 +561,9 @@ ol {
   #shooting-star .button {
     font-size: 12pt;
     margin: 0px;
+  }
+  #mind-list .fas,
+  #mind-list .far {
+    font-size: 60px;
   }
 }
