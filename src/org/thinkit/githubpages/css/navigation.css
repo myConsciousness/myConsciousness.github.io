@@ -51,6 +51,7 @@ nav .link-wrap div:hover {
 }
 
 nav .fa-bars {
+  display: none;
   font-size: 30pt;
   line-height: 36pt;
   margin: auto 0;
