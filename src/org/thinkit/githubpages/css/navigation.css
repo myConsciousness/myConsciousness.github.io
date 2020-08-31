@@ -49,7 +49,7 @@ nav .link-wrap div:hover {
   color: #e31b6d;
 }
 
-nav .mdi-menu {
+nav .fa-bars {
   font-size: 30pt;
   line-height: 36pt;
   margin: auto 0;
@@ -60,6 +60,16 @@ nav .mdi-menu {
 
 nav .active {
   color: #e31b6d;
+}
+
+@media screen and (min-width: 600px) {
+  nav .link-wrap {
+    background: none;
+    height: initial;
+    overflow: visible;
+    position: initial;
+    text-align: left;
+  }
 }
 
 @keyframes popDown {
