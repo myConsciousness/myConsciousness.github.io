@@ -43,7 +43,7 @@
         } else if (sectionWindowTop > $('#about').offset().top) {
             highlightLink('about');
         } else {
-            highlightLink('home');
+            highlightLink('shooting-star');
         }
 
         clearTimeout(lockTimer);

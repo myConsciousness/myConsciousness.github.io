@@ -59,7 +59,7 @@ nav .fa-bars {
   top: 0;
 }
 
-nav .active {
+nav .link-wrap div .active {
   color: #e31b6d;
 }
 
