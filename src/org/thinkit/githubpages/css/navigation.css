@@ -5,7 +5,7 @@ nav {
   background: #1b242f;
   border-bottom: 3px solid #04c2c9;
   height: 50px;
-  text-align: left;
+  text-align: center;
   width: 100%;
   z-index: 99;
 }
@@ -34,18 +34,19 @@ nav .link-wrap.visible {
 }
 
 nav .link-wrap div {
+  display: inline-block;
+  background: #1b242f;
+  color: #fff;
+  border: unset;
   cursor: pointer;
   font-size: 12pt;
   padding: 12px 20px;
   text-transform: uppercase;
-  transition: color 1s;
-}
-
-nav .link-wrap div:first-child {
-  padding: 25px 20px 12px 20px;
+  transition: color 0.5s;
 }
 
 nav .link-wrap div:hover {
+  background: #1b242f;
   color: #e31b6d;
 }
 
@@ -68,7 +69,7 @@ nav .active {
     height: initial;
     overflow: visible;
     position: initial;
-    text-align: left;
+    text-align: center;
   }
 }
 
