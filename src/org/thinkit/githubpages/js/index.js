@@ -22,7 +22,7 @@
 
         if (windowTop > $('#about').offset().top) {
             $('nav').addClass('fixed');
-        } else if (windowTop < $('#about').offset().top) {
+        } else if (windowTop + 50 < $('#about').offset().top) {
             $('nav').removeClass('fixed');
         }
 
