@@ -14,7 +14,7 @@
         });
     }
 
-    var lockTimer;
+    let lockTimer;
 
     $(window).scroll(function() {
 
