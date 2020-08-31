@@ -327,6 +327,11 @@ ol {
   line-height: 27px;
 }
 
+#contact-information input,
+#contact-information textarea {
+  font-size: 12pt;
+}
+
 #contact-information h6 {
   margin-top: 20px;
   font-size: 25px;
