@@ -58,6 +58,10 @@
 
     scrollSmoothly();
 
+    $('.fa-bars').click(function() {
+        $('.link-wrap').toggleClass('visible');
+    });
+
     function fadeOutPreLoader() {
         $(window).on('load', function() {
             $(".loader").fadeOut();
