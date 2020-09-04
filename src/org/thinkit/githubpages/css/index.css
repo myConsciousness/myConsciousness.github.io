@@ -19,6 +19,10 @@ body {
 
 .flex {
   align-items: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
