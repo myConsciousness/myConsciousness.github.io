@@ -79,6 +79,7 @@ section:nth-of-type(3) #gallery .button .bold {
   font-size: 16pt;
 }
 section:nth-of-type(3) #gallery .button {
+  cursor: pointer;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -97,19 +98,16 @@ section:nth-of-type(3) #gallery .mix {
 section:nth-of-type(3) #gallery .mix .waypoint {
   background: #fff;
 }
-section:nth-of-type(3) #gallery .card {
-  border: unset;
-}
 section:nth-of-type(3) #gallery .mix .button:hover {
   background: #e31b6d;
   color: #fff;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+  background: url('https://user-images.githubusercontent.com/13072231/92247281-f608d080-ef01-11ea-8880-7eda6b904968.png')
     center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+  background: url('https://user-images.githubusercontent.com/13072231/92247230-e12c3d00-ef01-11ea-8861-3f648f20e3a5.png')
     center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
