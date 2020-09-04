@@ -56,6 +56,8 @@
     }
   });
 
+  $('#mix-container').mixItUp();
+
   function fadeOutPreLoader() {
     $(window).on('load', function () {
       $('.loader').fadeOut();
