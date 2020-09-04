@@ -372,51 +372,6 @@ ol {
 }
 
 /*---------------------
-  Hexagon
------------------------*/
-
-.hexagon .fas {
-  font-size: 15px;
-}
-
-.hex-wrap {
-  display: inline-block;
-  height: 80px;
-  position: relative;
-  text-align: center;
-  width: 80px;
-}
-
-.hexagon {
-  background-color: #04c2c9;
-  display: inline-block;
-  height: 100%;
-  width: calc(100% * 0.57735);
-}
-
-.hexagon:before {
-  background-color: inherit;
-  content: '';
-  height: inherit;
-  position: absolute;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
-  top: 0;
-  transform: rotateZ(60deg);
-  width: inherit;
-}
-
-.hexagon:after {
-  background-color: inherit;
-  content: '';
-  height: inherit;
-  position: absolute;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
-  top: 0;
-  transform: rotateZ(-60deg);
-  width: inherit;
-}
-
-/*---------------------
   Helper CSS
 -----------------------*/
 
