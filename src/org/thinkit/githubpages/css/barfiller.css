@@ -85,7 +85,7 @@
   border: solid;
   border-color: rgba(0, 0, 0, 0.8) transparent;
   border-width: 6px 6px 0 6px;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 9px;

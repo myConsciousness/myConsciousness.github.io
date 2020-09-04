@@ -1,48 +1,48 @@
 @font-face {
-    font-family: 'Rockville Solid';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Rockville Solid'), url('../font/Rockville-Solid.woff') format('woff');
+  font-family: 'Rockville Solid';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rockville Solid'), url('../font/Rockville-Solid.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Now Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Now Regular'), url('../font/Now-Regular.woff') format('woff');
+  font-family: 'Now Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Now Regular'), url('../font/Now-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Now Thin';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Now Thin'), url('../font/Now-Thin.woff') format('woff');
+  font-family: 'Now Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Now Thin'), url('../font/Now-Thin.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Now Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Now Light'), url('../font/Now-Light.woff') format('woff');
+  font-family: 'Now Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Now Light'), url('../font/Now-Light.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Now Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Now Medium'), url('../font/Now-Medium.woff') format('woff');
+  font-family: 'Now Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Now Medium'), url('../font/Now-Medium.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Now Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Now Bold'), url('../font/Now-Bold.woff') format('woff');
+  font-family: 'Now Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Now Bold'), url('../font/Now-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Now Black';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Now Black'), url('../font/Now-Black.woff') format('woff');
+  font-family: 'Now Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Now Black'), url('../font/Now-Black.woff') format('woff');
 }

@@ -1,86 +1,82 @@
 'use strict';
 
-(function($) {
+(function ($) {
+  fadeOutPreLoader();
 
-    fadeOutPreLoader();
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $('.height-fix').each(function () {
+      $(this).height($(this).height());
+    });
+  }
+
+  scrollSmoothly();
+
+  let lockTimer;
+
+  $(window).scroll(function () {
+    let windowTop = $(window).scrollTop();
+    const sectionAboutTop = $('#about').offset().top;
+
+    if (windowTop >= sectionAboutTop) {
+      $('nav').addClass('fixed');
+    } else if (windowTop + 50 < sectionAboutTop) {
+      $('nav').removeClass('fixed');
+    }
+
+    const sectionWindowTop = windowTop + 50;
 
     if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-            navigator.userAgent
-        )
+      sectionWindowTop > $('#contact').offset().top ||
+      windowTop + $(window).height() === $(document).height()
     ) {
-        $('.height-fix').each(function() {
-            $(this).height($(this).height());
-        });
+      highlightLink('contact');
+    } else if (sectionWindowTop > $('#portfolio').offset().top) {
+      highlightLink('portfolio');
+    } else if (sectionWindowTop > $('#about').offset().top) {
+      highlightLink('about');
+    } else {
+      highlightLink('shooting-star');
     }
 
-    scrollSmoothly();
+    clearTimeout(lockTimer);
 
-    let lockTimer;
+    if (!$('body').hasClass('disable-hover')) {
+      $('body').addClass('disable-hover');
+    }
 
-    $(window).scroll(function() {
+    lockTimer = setTimeout(function () {
+      $('body').removeClass('disable-hover');
+    }, 500);
 
-        let windowTop = $(window).scrollTop();
-        const sectionAboutTop = $('#about').offset().top;
+    function highlightLink(anchor) {
+      $('nav .active').removeClass('active');
+      $('nav')
+        .find('[destination="' + anchor + '"]')
+        .addClass('active');
+    }
+  });
 
-        if (windowTop >= sectionAboutTop) {
-            $('nav').addClass('fixed');
-        } else if (windowTop + 50 < sectionAboutTop) {
-            $('nav').removeClass('fixed');
-        }
-
-        const sectionWindowTop = windowTop + 50;
-
-        if (sectionWindowTop > $('#contact').offset().top ||
-            windowTop + $(window).height() === $(document).height()) {
-            highlightLink('contact');
-        } else if (sectionWindowTop > $('#portfolio').offset().top) {
-            highlightLink('portfolio');
-        } else if (sectionWindowTop > $('#about').offset().top) {
-            highlightLink('about');
-        } else {
-            highlightLink('shooting-star');
-        }
-
-        clearTimeout(lockTimer);
-
-        if (!$('body').hasClass('disable-hover')) {
-            $('body').addClass('disable-hover');
-        }
-
-        lockTimer = setTimeout(function() {
-            $('body').removeClass('disable-hover');
-        }, 500);
-
-        function highlightLink(anchor) {
-            $('nav .active').removeClass('active');
-            $('nav')
-                .find('[destination="' + anchor + '"]')
-                .addClass('active');
-        }
+  function fadeOutPreLoader() {
+    $(window).on('load', function () {
+      $('.loader').fadeOut();
+      $('#preloder').delay(200).fadeOut('slow');
     });
+  }
 
-    function fadeOutPreLoader() {
-        $(window).on('load', function() {
-            $(".loader").fadeOut();
-            $("#preloder").delay(200).fadeOut("slow");
-        });
-    }
+  function scrollSmoothly() {
+    $('.page-link').click(function () {
+      const anchor = $(this).attr('destination');
 
-    function scrollSmoothly() {
-        $('.page-link').click(function() {
+      $('nav')
+        .find('[destination="' + anchor + '"]')
+        .addClass('active');
 
-            const anchor = $(this).attr('destination');
-
-            $('nav')
-                .find('[destination="' + anchor + '"]')
-                .addClass('active');
-
-            $('html, body').animate({
-                    scrollTop: $('#' + anchor).offset().top
-                },
-                500
-            );
-        });
-    }
+      $('html, body').animate(
+        {
+          scrollTop: $('#' + anchor).offset().top,
+        },
+        500
+      );
+    });
+  }
 })(jQuery);

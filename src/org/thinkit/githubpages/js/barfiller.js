@@ -12,63 +12,60 @@
  * the License.
  */
 
-'use strict'
+'use strict';
 
 /**
  * スキルセット
  */
 const SKILL_SET = {
-    'Java 7 ~ 14': 95,
-    'HTML5': 80,
-    'CSS3': 70,
-    'Scss': 65,
-    'JavaScript ES6': 90,
-    'Python 3.x': 75,
-    'Oracle SQL': 80,
-    'Struts': 90,
-    'Spring Boot': 85,
-    'Bootstrap': 70,
-    'Android': 75
-}
+  'Java 7 ~ 14': 95,
+  HTML5: 80,
+  CSS3: 70,
+  Scss: 65,
+  'JavaScript ES6': 90,
+  'Python 3.x': 75,
+  'Oracle SQL': 80,
+  Struts: 90,
+  'Spring Boot': 85,
+  Bootstrap: 70,
+  Android: 75,
+};
 
 /**
  * スキルセットを基にスキルバーを生成しHTMLへ出力します。
  */
 const createSkillBars = () => {
+  const skillBarsObject = document.getElementById('skill-bars');
 
-    const skillBarsObject = document.getElementById('skill-bars');
+  let skillSet = '';
+  let count = 0;
 
-    let skillSet = '';
-    let count = 0;
-
-    Object.keys(SKILL_SET).forEach(function(skill) {
-        skillSet +=
-            `<div class="skill-bar-item">
+  Object.keys(SKILL_SET).forEach(function (skill) {
+    skillSet += `<div class="skill-bar-item">
                 <p><strong>${skill}</strong></p>
                 <div id="bar${++count}" class="barfiller">
                     <span class="tip"></span>
                     <span class="fill" data-percentage="${SKILL_SET[skill]}"></span>
                 </div>
-            </div>`
-    });
+            </div>`;
+  });
 
-    skillBarsObject.innerHTML = skillSet;
-}
+  skillBarsObject.innerHTML = skillSet;
+};
 
 createSkillBars();
 
-(function($) {
+(function ($) {
+  fillSkillBars();
 
-    fillSkillBars();
-
-    /**
-     * HTMLで設定された "data-percentage" の値を基にスキルバーを出力します。
-     */
-    function fillSkillBars() {
-        for (let i = 1, count = Object.keys(SKILL_SET).length; i <= count; i++) {
-            $('#bar' + String(i)).barfiller({
-                barColor: "#04c2c9",
-            });
-        }
+  /**
+   * HTMLで設定された "data-percentage" の値を基にスキルバーを出力します。
+   */
+  function fillSkillBars() {
+    for (let i = 1, count = Object.keys(SKILL_SET).length; i <= count; i++) {
+      $('#bar' + String(i)).barfiller({
+        barColor: '#04c2c9',
+      });
     }
+  }
 })(jQuery);
