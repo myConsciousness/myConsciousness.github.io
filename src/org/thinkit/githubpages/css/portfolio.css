@@ -63,6 +63,7 @@ section:nth-of-type(3) .text {
   width: 100%;
 }
 section:nth-of-type(3) #gallery {
+  flex-wrap: nowrap;
   margin: 20px 0;
 }
 section:nth-of-type(3) #gallery .text,
@@ -89,6 +90,7 @@ section:nth-of-type(3) #gallery .button {
   width: 170px;
 }
 section:nth-of-type(3) #gallery .mix {
+  width: 50%;
   display: none;
   position: relative;
 }
