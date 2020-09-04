@@ -136,35 +136,54 @@
       </div>
     </section>
 
-    <section id="portfolio" class="portfolio" name="portfolio">
+    <section id="portfolio" class="portfolio flex" name="portfolio">
       <div class="white-divide-2"></div>
       <h1>PORTFOLIO</h1>
       <div class="header-divide-black-center"></div>
 
-      <div class="controls">
-        <label>Filter:</label>
-        <button class="filter" data-filter="all">All</button>
-        <button class="filter" data-filter=".category-1">Category 1</button>
-        <button class="filter active" data-filter=".category-2">Category 2</button>
-
-        <label>Sort:</label>
-        <button class="sort" data-sort="myorder:asc">Asc</button>
-        <button class="sort" data-sort="myorder:desc">Desc</button>
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".java">Java</div>
+          <div class="filter" data-filter=".js">JavaScript</div>
+          <div class="filter" data-filter=".py">Python</div>
+          <div class="filter" data-filter=".html">HTML</div>
+        </div>
+        <div class="float-bar">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".java">Java</div>
+            <div class="filter" data-filter=".js">JavaScript</div>
+            <div class="filter" data-filter=".py">Python</div>
+            <div class="filter" data-filter=".html">HTML</div>
+          </div>
+        </div>
       </div>
 
-      <div id="mix-container" class="mix-container">
-        <div class="mix category-1" data-myorder="1"></div>
-        <div class="mix category-1" data-myorder="2"></div>
-        <div class="mix category-1" data-myorder="3"></div>
-        <div class="mix category-2" data-myorder="4"></div>
-        <div class="mix category-1" data-myorder="5"></div>
-        <div class="mix category-1" data-myorder="6"></div>
-        <div class="mix category-2" data-myorder="7"></div>
-        <div class="mix category-2" data-myorder="8"></div>
+      <div id="gallery" class="container flex row wrap waypoint">
+        <div class="mix java" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">SQL Formatter</div>
+              <span class="highlight">Gradle / Java 14</span>
+            </div>
+            <div class="button" id="ordering">See Repository</div>
+          </div>
+        </div>
 
-        <div class="gap"></div>
-        <div class="gap"></div>
+        <div class="mix java" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">JSON Formatter</div>
+              <span class="highlight">Gradle / Java 14</span>
+            </div>
+            <div class="button" id="discover">See Repository</div>
+          </div>
+        </div>
       </div>
+    </div>
     </section>
 
     <section id="contact" name="contact">
@@ -276,10 +295,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
     <script src="./src/org/thinkit/githubpages/js/jquery.barfiller.js"></script>
-    <script src="./src/org/thinkit/githubpages/js/mixitup.js"></script>
     <script src="./src/org/thinkit/githubpages/js/barfiller.js"></script>
     <script src="./src/org/thinkit/githubpages/js/mindfiller.js"></script>
     <script src="./src/org/thinkit/githubpages/js/pt.min.js"></script>
