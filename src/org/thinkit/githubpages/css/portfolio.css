@@ -12,17 +12,153 @@
   the License.
 */
 
-.mix-container {
-  padding: 2%;
-  text-align: justify;
+section:nth-of-type(3) {
+  background: #f5f5f5;
 }
-
-.mix-container .mix,
-.mix-container .gap {
-  display: inline-block;
-  width: 49%;
+section:nth-of-type(3) .container {
+  padding: 0;
 }
-
-#mix-container .mix {
+section:nth-of-type(3) .filter-wrap {
+  position: relative;
+  white-space: nowrap;
+}
+section:nth-of-type(3) .filter {
+  cursor: pointer;
+  font-size: 6pt;
+  font-weight: 600;
+  padding: 0 20px;
+  transition: background-color 0.5s;
+}
+section:nth-of-type(3) .float-bar {
+  bottom: 0;
+  left: 30px;
+  position: absolute;
+  top: 0;
+  background: #e31b6d;
+  border-radius: 1px;
+  height: 25px;
+  margin: auto 0;
+  overflow: hidden;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+section:nth-of-type(3) .float-bar .row {
+  bottom: 0;
+  left: -30px;
+  position: absolute;
+  top: 0;
+  margin: auto 0;
+  transition: left 0.5s ease-in-out;
+}
+section:nth-of-type(3) .float-bar .row .filter {
+  color: #fff;
+}
+section:nth-of-type(3) .text {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+section:nth-of-type(3) #gallery {
+  margin: 20px 0;
+}
+section:nth-of-type(3) #gallery .text,
+section:nth-of-type(3) #gallery .button {
+  color: #1b242f;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+section:nth-of-type(3) #gallery .text .bold,
+section:nth-of-type(3) #gallery .button .bold {
+  font-size: 16pt;
+}
+section:nth-of-type(3) #gallery .button {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  border: 2px solid #e31b6d;
+  font-size: 13pt;
+  margin: 0 auto;
+  padding: 7px 0;
+  width: 170px;
+}
+section:nth-of-type(3) #gallery .mix {
   display: none;
+  position: relative;
+}
+section:nth-of-type(3) #gallery .mix .waypoint {
+  background: #fff;
+}
+section:nth-of-type(3) #gallery .mix .button:hover {
+  background: #e31b6d;
+  color: #fff;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
+  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
+    center center/cover;
+}
+section:nth-of-type(3) #gallery .mix .card {
+  height: 240px;
+  max-width: 100%;
+  transition: opacity 0.5s;
+  width: calc(50vw - 8px);
+}
+section:nth-of-type(3) #gallery .mix:hover .card {
+  opacity: 0;
+}
+section:nth-of-type(3) #gallery .mix:hover .text {
+  cursor: default;
+  opacity: 1;
+  top: 24%;
+}
+section:nth-of-type(3) #gallery .mix:hover .button {
+  bottom: 24%;
+  opacity: 1;
 }
