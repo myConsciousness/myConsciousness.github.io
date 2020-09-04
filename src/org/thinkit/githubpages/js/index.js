@@ -56,7 +56,13 @@
     }
   });
 
-  $('#mix-container').mixItUp();
+  $('#gallery').mixItUp({});
+
+  function mixClear() {
+    setTimeout(function () {
+      $('#gallery').removeClass('waypoint');
+    }, 2000);
+  }
 
   function fadeOutPreLoader() {
     $(window).on('load', function () {
