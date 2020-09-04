@@ -27,7 +27,7 @@ section:nth-of-type(3) .filter-wrap {
 section:nth-of-type(3) .filter {
   color: #1b242f;
   cursor: pointer;
-  font-size: 10pt;
+  font-size: 15pt;
   font-weight: 600;
   padding: 0 20px;
   transition: background-color 0.5s;
