@@ -45,7 +45,7 @@ section:nth-of-type(3) .float-bar {
   position: absolute;
   transition: all 0.5s ease-in-out;
 }
-section:nth-of-type(3) .float-bar .row {
+section:nth-of-type(3) .float-bar .flex-row {
   bottom: 0;
   left: -30px;
   position: absolute;
@@ -53,7 +53,7 @@ section:nth-of-type(3) .float-bar .row {
   margin: auto 0;
   transition: left 0.5s ease-in-out;
 }
-section:nth-of-type(3) .float-bar .row .filter {
+section:nth-of-type(3) .float-bar .flex-row .filter {
   color: #fff;
 }
 section:nth-of-type(3) .text {
