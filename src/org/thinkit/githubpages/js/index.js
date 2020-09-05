@@ -58,6 +58,39 @@
 
   $('#gallery').mixItUp({});
 
+  function onScrollInit(items, elemTrigger) {
+    let offset = $(window).height() / 1.6;
+    items.each(function () {
+      let elem = $(this),
+        animationClass = elem.attr('data-animation'),
+        animationDelay = elem.attr('data-delay');
+
+      elem.css({
+        '-webkit-animation-delay': animationDelay,
+        '-moz-animation-delay': animationDelay,
+        'animation-delay': animationDelay,
+      });
+
+      let trigger = elemTrigger ? trigger : elem;
+
+      trigger.waypoint(
+        function () {
+          elem.addClass('animated').addClass(animationClass);
+          if (elem.get(0).id === 'gallery') mixClear();
+        },
+
+        {
+          triggerOnce: true,
+          offset: offset,
+        }
+      );
+    });
+  }
+
+  setTimeout(function () {
+    onScrollInit($('.waypoint'));
+  }, 10);
+
   function mixClear() {
     setTimeout(function () {
       $('#gallery').removeClass('waypoint');
