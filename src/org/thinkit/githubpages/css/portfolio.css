@@ -104,11 +104,11 @@ section:nth-of-type(3) #gallery .mix .button:hover {
 }
 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
   background: url('https://user-images.githubusercontent.com/13072231/92291515-05186e80-ef54-11ea-80f6-18ed1f5ff2b9.png')
-    center center/cover;
+    top center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
   background: url('https://user-images.githubusercontent.com/13072231/92247281-f608d080-ef01-11ea-8880-7eda6b904968.png')
-    center center/cover;
+    top center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
   background: url('https://user-images.githubusercontent.com/13072231/92247230-e12c3d00-ef01-11ea-8861-3f648f20e3a5.png')
@@ -116,15 +116,15 @@ section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
 }
 section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
   background: url('https://user-images.githubusercontent.com/13072231/92294280-bd9ade00-ef65-11ea-87c6-fc8e7b2f41eb.png')
-    center center/cover;
+    top center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
   background: url('https://user-images.githubusercontent.com/13072231/92306692-084f4100-efcc-11ea-9a54-e6894a4d26f3.png')
-    center center/cover;
+    top center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92307596-89113b80-efd2-11ea-8c81-e63094f6cc2c.png')
-    center center/cover;
+  background: url('https://user-images.githubusercontent.com/13072231/92307444-9679f600-efd1-11ea-9506-708298b87c4b.png')
+    top center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
   background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
