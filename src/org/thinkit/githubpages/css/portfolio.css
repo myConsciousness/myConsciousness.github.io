@@ -57,6 +57,7 @@ section:nth-of-type(3) .float-bar .flex-row .filter {
   color: #fff;
 }
 section:nth-of-type(3) .text {
+  font-size: 9pt;
   left: 0;
   position: absolute;
   top: 0;
@@ -91,7 +92,7 @@ section:nth-of-type(3) #gallery .button {
   width: 170px;
 }
 section:nth-of-type(3) #gallery .mix {
-  width: 50%;
+  width: 30%;
   display: none;
   position: relative;
 }
