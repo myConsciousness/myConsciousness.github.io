@@ -173,6 +173,78 @@ ol {
 }
 
 /*---------------------
+    Section
+  -----------------------*/
+.section-title {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    font-size: 100px;
+    color: #f2f2f2;
+    font-family: 'Rockville Solid';
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  h2 {
+    font-size: 42px;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+/*---------------------
+    Shooting Star
+  -----------------------*/
+
+#shooting-star {
+  height: 100%;
+  width: 100%;
+
+  #pt {
+    height: 100%;
+    width: 100%;
+
+    &.canvas {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .button {
+    border: 2px solid #04c2c9;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #04c2c9;
+    color: #04c2c9;
+    font-size: 20pt;
+    margin: 5px 0 0 0;
+    outline: 0;
+    padding: 10px 30px;
+    transition: all 0.5s;
+    border-radius: 3px 15px 3px 15px;
+
+    &:focus,
+    &:hover {
+      border: 2px solid #04c2c9;
+      background-color: #04c2c9;
+      color: #fff;
+    }
+  }
+}
+
+/*---------------------
     About
   -----------------------*/
 
@@ -199,6 +271,33 @@ ol {
       h2 {
         line-height: 55px;
       }
+    }
+  }
+}
+
+/*---------------------
+    Mind
+  -----------------------*/
+
+#mind-list {
+  text-align: center;
+
+  .mind {
+    margin-top: 20px;
+
+    .fas,
+    .far {
+      color: #04c2c9;
+      font-size: 80px;
+    }
+
+    .mind-title {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .mind-description {
+      text-align: left;
     }
   }
 }
@@ -325,33 +424,6 @@ ol {
 }
 
 /*---------------------
-    Section
-  -----------------------*/
-.section-title {
-  margin-bottom: 40px;
-  position: relative;
-  z-index: 1;
-
-  h1 {
-    font-size: 100px;
-    color: #f2f2f2;
-    font-family: 'Rockville Solid';
-    position: absolute;
-    left: 0;
-    top: -45px;
-    width: 100%;
-    z-index: -1;
-  }
-
-  h2 {
-    font-size: 42px;
-    color: #111111;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-}
-
-/*---------------------
     Helper
   -----------------------*/
 
@@ -363,85 +435,18 @@ ol {
   color: #04c2c9;
 }
 
-/*---------------------
-    Shooting Star
-  -----------------------*/
-
-#shooting-star {
-  height: 100%;
-  width: 100%;
-
-  #pt {
-    height: 100%;
-    width: 100%;
-
-    &.canvas {
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
+@media screen and (max-width: 480px) {
+  #shooting-star {
+    .button {
+      font-size: 12pt;
+      margin: 0px;
     }
   }
 
-  .button {
-    border: 2px solid #04c2c9;
-    box-sizing: inherit;
-    cursor: pointer;
-    display: inline-block;
-    background: transparent;
-    border: 2px solid #04c2c9;
-    color: #04c2c9;
-    font-size: 20pt;
-    margin: 5px 0 0 0;
-    outline: 0;
-    padding: 10px 30px;
-    transition: all 0.5s;
-    border-radius: 3px 15px 3px 15px;
-
-    &:focus,
-    &:hover {
-      border: 2px solid #04c2c9;
-      background-color: #04c2c9;
-      color: #fff;
-    }
-  }
-}
-
-/*---------------------
-    Mind
-  -----------------------*/
-
-#mind-list {
-  text-align: center;
-
-  .mind {
-    margin-top: 20px;
-
+  #mind-list {
     .fas,
     .far {
-      color: #04c2c9;
-      font-size: 80px;
+      font-size: 60px;
     }
-
-    .mind-title {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    .mind-description {
-      text-align: left;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #shooting-star .button {
-    font-size: 12pt;
-    margin: 0px;
-  }
-  #mind-list .fas,
-  #mind-list .far {
-    font-size: 60px;
   }
 }
