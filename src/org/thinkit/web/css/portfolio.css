@@ -1,38 +1,40 @@
 /*
-  Copyright 2020 Kato Shinya.
-
-  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
-  in compliance with the License. You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software distributed under the License
-  is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
-  or implied. See the License for the specific language governing permissions and limitations under
-  the License.
-*/
-
-section:nth-of-type(3) {
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+#portfolio {
   background: #f5f5f5;
 }
 
-section:nth-of-type(3) .container {
+#portfolio .container {
   padding: 0;
 }
 
-section:nth-of-type(3) .filter-wrap {
+#portfolio .filter-wrap {
   position: relative;
   white-space: nowrap;
 }
-section:nth-of-type(3) .filter {
+
+#portfolio .filter-wrap .filter {
   color: #1b242f;
   cursor: pointer;
   font-size: 15pt;
   font-weight: 600;
   padding: 0 20px;
+  -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
-section:nth-of-type(3) .float-bar {
+
+#portfolio .filter-wrap .float-bar {
   bottom: 0;
   left: 30px;
   position: absolute;
@@ -43,43 +45,57 @@ section:nth-of-type(3) .float-bar {
   margin: auto 0;
   overflow: hidden;
   position: absolute;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-section:nth-of-type(3) .float-bar .flex-row {
+
+#portfolio .filter-wrap .float-bar .flex-row {
   bottom: 0;
   left: -30px;
   position: absolute;
   top: 0;
   margin: auto 0;
+  -webkit-transition: left 0.5s ease-in-out;
   transition: left 0.5s ease-in-out;
 }
-section:nth-of-type(3) .float-bar .flex-row .filter {
+
+#portfolio .filter-wrap .float-bar .flex-row .filter {
   color: #fff;
 }
-section:nth-of-type(3) .text {
+
+#portfolio #gallery {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 20px 0;
+}
+
+#portfolio #gallery .mix {
+  width: 30%;
+  display: none;
+  position: relative;
+}
+
+#portfolio #gallery .mix.waypoint {
+  background: #fff;
+}
+
+#portfolio #gallery .mix .card {
+  height: 240px;
+  max-width: 100%;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  width: calc(50vw - 8px);
+}
+
+#portfolio #gallery .mix .text {
   font-size: 9pt;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
 }
-section:nth-of-type(3) #gallery {
-  flex-wrap: nowrap;
-  margin: 20px 0;
-}
-section:nth-of-type(3) #gallery .text,
-section:nth-of-type(3) #gallery .button {
-  color: #1b242f;
-  opacity: 0;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  z-index: 2;
-}
-section:nth-of-type(3) #gallery .text .bold,
-section:nth-of-type(3) #gallery .button .bold {
-  font-size: 16pt;
-}
-section:nth-of-type(3) #gallery .button {
+
+#portfolio #gallery .mix .button {
   cursor: pointer;
   bottom: 0;
   left: 0;
@@ -91,81 +107,63 @@ section:nth-of-type(3) #gallery .button {
   padding: 7px 0;
   width: 170px;
 }
-section:nth-of-type(3) #gallery .mix {
-  width: 30%;
-  display: none;
-  position: relative;
-}
-section:nth-of-type(3) #gallery .mix .waypoint {
-  background: #fff;
-}
-section:nth-of-type(3) #gallery .mix .button:hover {
+
+#portfolio #gallery .mix .button:hover {
   background: #e31b6d;
   color: #fff;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92291515-05186e80-ef54-11ea-80f6-18ed1f5ff2b9.png')
-    top center/cover;
+
+#portfolio #gallery .mix .text,
+#portfolio #gallery .mix .button {
+  color: #1b242f;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92247281-f608d080-ef01-11ea-8880-7eda6b904968.png')
-    top center/cover;
+
+#portfolio #gallery .mix .text .bold,
+#portfolio #gallery .mix .button .bold {
+  font-size: 16pt;
 }
-section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92247230-e12c3d00-ef01-11ea-8861-3f648f20e3a5.png')
-    center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92294280-bd9ade00-ef65-11ea-87c6-fc8e7b2f41eb.png')
-    top center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92306692-084f4100-efcc-11ea-9a54-e6894a4d26f3.png')
-    top center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92307444-9679f600-efd1-11ea-9506-708298b87c4b.png')
-    top center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
-    center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
-    center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
-    center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
-    center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
-    center center/cover;
-}
-section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
-  background: url('https://user-images.githubusercontent.com/13072231/92102486-a18a2600-ee19-11ea-93b9-e7f77bfabb51.png')
-    center center/cover;
-}
-section:nth-of-type(3) #gallery .mix .card {
-  height: 240px;
-  max-width: 100%;
-  transition: opacity 0.5s;
-  width: calc(50vw - 8px);
-}
-section:nth-of-type(3) #gallery .mix:hover .card {
+
+#portfolio #gallery .mix:hover .card {
   opacity: 0;
 }
-section:nth-of-type(3) #gallery .mix:hover .text {
+
+#portfolio #gallery .mix:hover .text {
   cursor: default;
   opacity: 1;
   top: 24%;
 }
-section:nth-of-type(3) #gallery .mix:hover .button {
+
+#portfolio #gallery .mix:hover .button {
   bottom: 24%;
   opacity: 1;
 }
+
+#portfolio #gallery .mix:nth-child(1) .card {
+  background: url("https://user-images.githubusercontent.com/13072231/92291515-05186e80-ef54-11ea-80f6-18ed1f5ff2b9.png") top center/cover;
+}
+
+#portfolio #gallery .mix:nth-child(2) .card {
+  background: url("https://user-images.githubusercontent.com/13072231/92247281-f608d080-ef01-11ea-8880-7eda6b904968.png") top center/cover;
+}
+
+#portfolio #gallery .mix:nth-child(3) .card {
+  background: url("https://user-images.githubusercontent.com/13072231/92247230-e12c3d00-ef01-11ea-8861-3f648f20e3a5.png") center center/cover;
+}
+
+#portfolio #gallery .mix:nth-child(4) .card {
+  background: url("https://user-images.githubusercontent.com/13072231/92294280-bd9ade00-ef65-11ea-87c6-fc8e7b2f41eb.png") top center/cover;
+}
+
+#portfolio #gallery .mix:nth-child(5) .card {
+  background: url("https://user-images.githubusercontent.com/13072231/92306692-084f4100-efcc-11ea-9a54-e6894a4d26f3.png") top center/cover;
+}
+
+#portfolio #gallery .mix:nth-child(6) .card {
+  background: url("https://user-images.githubusercontent.com/13072231/92307444-9679f600-efd1-11ea-9506-708298b87c4b.png") top center/cover;
+}
+/*# sourceMappingURL=portfolio.css.map */
