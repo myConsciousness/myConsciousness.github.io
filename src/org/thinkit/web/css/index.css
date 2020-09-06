@@ -204,62 +204,6 @@ ol {
 }
 
 /*---------------------
-    About
-  -----------------------*/
-#about {
-  margin-top: 30px;
-  padding-top: 0;
-}
-
-#about h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#about .about-text {
-  padding-top: 70px;
-}
-
-#about .about-text p {
-  color: #111111;
-  margin-bottom: 35px;
-}
-
-#about .about-text .section-title {
-  margin-bottom: 28px;
-}
-
-#about .about-text .section-title h2 {
-  line-height: 55px;
-}
-
-/*---------------------
-    Mind
-  -----------------------*/
-#mind-list {
-  text-align: center;
-}
-
-#mind-list .mind {
-  margin-top: 20px;
-}
-
-#mind-list .mind .fas,
-#mind-list .mind .far {
-  color: #04c2c9;
-  font-size: 80px;
-}
-
-#mind-list .mind .mind-title {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-#mind-list .mind .mind-description {
-  text-align: left;
-}
-
-/*---------------------
     Divider
   -----------------------*/
 .white-divide {
@@ -344,16 +288,5 @@ ol {
 
 .highlight-turquoise {
   color: #04c2c9;
-}
-
-@media screen and (max-width: 480px) {
-  #shooting-star .button {
-    font-size: 12pt;
-    margin: 0px;
-  }
-  #mind-list .fas,
-  #mind-list .far {
-    font-size: 60px;
-  }
 }
 /*# sourceMappingURL=index.css.map */

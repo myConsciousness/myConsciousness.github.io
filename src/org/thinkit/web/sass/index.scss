@@ -175,6 +175,7 @@ ol {
 /*---------------------
     Section
   -----------------------*/
+
 .section-title {
   margin-bottom: 40px;
   position: relative;
@@ -196,64 +197,6 @@ ol {
     color: #111111;
     font-weight: 700;
     text-transform: uppercase;
-  }
-}
-
-/*---------------------
-    About
-  -----------------------*/
-
-#about {
-  margin-top: 30px;
-  padding-top: 0;
-
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .about-text {
-    padding-top: 70px;
-
-    p {
-      color: #111111;
-      margin-bottom: 35px;
-    }
-
-    .section-title {
-      margin-bottom: 28px;
-
-      h2 {
-        line-height: 55px;
-      }
-    }
-  }
-}
-
-/*---------------------
-    Mind
-  -----------------------*/
-
-#mind-list {
-  text-align: center;
-
-  .mind {
-    margin-top: 20px;
-
-    .fas,
-    .far {
-      color: #04c2c9;
-      font-size: 80px;
-    }
-
-    .mind-title {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    .mind-description {
-      text-align: left;
-    }
   }
 }
 
@@ -346,20 +289,4 @@ ol {
 
 .highlight-turquoise {
   color: #04c2c9;
-}
-
-@media screen and (max-width: 480px) {
-  #shooting-star {
-    .button {
-      font-size: 12pt;
-      margin: 0px;
-    }
-  }
-
-  #mind-list {
-    .fas,
-    .far {
-      font-size: 60px;
-    }
-  }
 }
