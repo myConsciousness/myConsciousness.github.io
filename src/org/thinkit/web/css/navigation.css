@@ -1,17 +1,16 @@
 /*
-  Copyright 2020 Kato Shinya.
-
-  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
-  in compliance with the License. You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software distributed under the License
-  is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
-  or implied. See the License for the specific language governing permissions and limitations under
-  the License.
-*/
-
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
 nav {
   bottom: 0;
   left: 0;
@@ -29,23 +28,21 @@ nav.fixed {
   left: 0;
   position: fixed;
   top: 0;
-  animation: popDown 1s;
+  -webkit-animation: popDown 1s;
+          animation: popDown 1s;
 }
 
 nav .link-wrap {
   max-width: 1200px;
   overflow: hidden;
   top: 53px;
+  -webkit-transition: height 0.5s ease-out;
   transition: height 0.5s ease-out;
   width: 100%;
   background: none;
   height: initial;
   overflow: visible;
   position: initial;
-}
-
-nav .link-wrap.visible {
-  height: 220px;
 }
 
 nav .link-wrap div {
@@ -57,7 +54,12 @@ nav .link-wrap div {
   font-size: 12pt;
   padding: 12px 20px;
   text-transform: uppercase;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
+}
+
+nav .link-wrap div.active {
+  color: #e31b6d;
 }
 
 nav .link-wrap div:hover {
@@ -65,7 +67,11 @@ nav .link-wrap div:hover {
   color: #e31b6d;
 }
 
-nav .fa-bars {
+nav .link-wrap.visible {
+  height: 220px;
+}
+
+nav .link-wrap .fa-bars {
   display: none;
   font-size: 30pt;
   line-height: 36pt;
@@ -73,10 +79,6 @@ nav .fa-bars {
   position: absolute;
   right: 5vw;
   top: 0;
-}
-
-nav div.active {
-  color: #e31b6d;
 }
 
 @media screen and (max-width: 480px) {
@@ -89,8 +91,17 @@ nav div.active {
   }
 }
 
-@keyframes popDown {
+@-webkit-keyframes popDown {
   0% {
-    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
 }
+
+@keyframes popDown {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+/*# sourceMappingURL=navigation.css.map */
