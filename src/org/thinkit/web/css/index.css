@@ -236,6 +236,23 @@ ol {
   margin-top: -126px;
 }
 
+.header-divide-black-center {
+  width: 100px;
+  border-top: 3px solid #444957;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.header-divide-white {
+  width: 50px;
+  border-top: 3px solid #ffffff;
+  height: 20px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
 /*---------------------
     Contact
   -----------------------*/
@@ -333,37 +350,15 @@ ol {
   text-transform: uppercase;
 }
 
+/*---------------------
+    Helper
+  -----------------------*/
 .highlight {
   color: #e31b6d;
 }
 
 .highlight-turquoise {
   color: #04c2c9;
-}
-
-.header-divide-black {
-  width: 50px;
-  border-top: 3px solid #444957;
-  height: 20px;
-  margin-top: 18px;
-  margin-bottom: 10px;
-}
-
-.header-divide-black-center {
-  width: 100px;
-  border-top: 3px solid #444957;
-  height: 20px;
-  margin: 0 auto;
-  margin-top: 18px;
-  margin-bottom: 10px;
-}
-
-.header-divide-white {
-  width: 50px;
-  border-top: 3px solid #ffffff;
-  height: 20px;
-  margin-top: 18px;
-  margin-bottom: 10px;
 }
 
 #shooting-star,
