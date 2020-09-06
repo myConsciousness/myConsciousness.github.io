@@ -1,0 +1,182 @@
+/*
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+#portfolio {
+  background: #f5f5f5;
+
+  .container {
+    padding: 0;
+  }
+
+  .filter-wrap {
+    position: relative;
+    white-space: nowrap;
+
+    .filter {
+      color: #1b242f;
+      cursor: pointer;
+      font-size: 15pt;
+      font-weight: 600;
+      padding: 0 20px;
+      transition: background-color 0.5s;
+    }
+
+    .float-bar {
+      bottom: 0;
+      left: 30px;
+      position: absolute;
+      top: 0;
+      background: #e31b6d;
+      border-radius: 1px;
+      height: 25px;
+      margin: auto 0;
+      overflow: hidden;
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+
+      .flex-row {
+        bottom: 0;
+        left: -30px;
+        position: absolute;
+        top: 0;
+        margin: auto 0;
+        transition: left 0.5s ease-in-out;
+
+        .filter {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  #gallery {
+    flex-wrap: nowrap;
+    margin: 20px 0;
+
+    .mix {
+      width: 30%;
+      display: none;
+      position: relative;
+
+      &.waypoint {
+        background: #fff;
+      }
+
+      .card {
+        height: 240px;
+        max-width: 100%;
+        transition: opacity 0.5s;
+        width: calc(50vw - 8px);
+      }
+
+      .text {
+        font-size: 9pt;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .button {
+        cursor: pointer;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        border: 2px solid #e31b6d;
+        font-size: 13pt;
+        margin: 0 auto;
+        padding: 7px 0;
+        width: 170px;
+
+        &:hover {
+          background: #e31b6d;
+          color: #fff;
+        }
+      }
+
+      .text,
+      .button {
+        color: #1b242f;
+        opacity: 0;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+
+        .bold {
+          font-size: 16pt;
+        }
+      }
+
+      &:hover {
+        .card {
+          opacity: 0;
+        }
+
+        .text {
+          cursor: default;
+          opacity: 1;
+          top: 24%;
+        }
+
+        .button {
+          bottom: 24%;
+          opacity: 1;
+        }
+      }
+
+      &:nth-child(1) {
+        .card {
+          background: url('https://user-images.githubusercontent.com/13072231/92291515-05186e80-ef54-11ea-80f6-18ed1f5ff2b9.png')
+            top center/cover;
+        }
+      }
+
+      &:nth-child(2) {
+        .card {
+          background: url('https://user-images.githubusercontent.com/13072231/92247281-f608d080-ef01-11ea-8880-7eda6b904968.png')
+            top center/cover;
+        }
+      }
+
+      &:nth-child(3) {
+        .card {
+          background: url('https://user-images.githubusercontent.com/13072231/92247230-e12c3d00-ef01-11ea-8861-3f648f20e3a5.png')
+            center center/cover;
+        }
+      }
+
+      &:nth-child(4) {
+        .card {
+          background: url('https://user-images.githubusercontent.com/13072231/92294280-bd9ade00-ef65-11ea-87c6-fc8e7b2f41eb.png')
+            top center/cover;
+        }
+      }
+
+      &:nth-child(5) {
+        .card {
+          background: url('https://user-images.githubusercontent.com/13072231/92306692-084f4100-efcc-11ea-9a54-e6894a4d26f3.png')
+            top center/cover;
+        }
+      }
+
+      &:nth-child(6) {
+        .card {
+          background: url('https://user-images.githubusercontent.com/13072231/92307444-9679f600-efd1-11ea-9506-708298b87c4b.png')
+            top center/cover;
+        }
+      }
+    }
+  }
+}
