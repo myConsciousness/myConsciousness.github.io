@@ -314,28 +314,24 @@ ol {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
-}
 
-.section-title.center-title {
-  text-align: center;
-}
+  h1 {
+    font-size: 100px;
+    color: #f2f2f2;
+    font-family: 'Rockville Solid';
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 100%;
+    z-index: -1;
+  }
 
-.section-title h2 {
-  font-size: 42px;
-  color: #111111;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.section-title h1 {
-  font-size: 100px;
-  color: #f2f2f2;
-  font-family: 'Rockville Solid';
-  position: absolute;
-  left: 0;
-  top: -45px;
-  width: 100%;
-  z-index: -1;
+  h2 {
+    font-size: 42px;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 .highlight {
