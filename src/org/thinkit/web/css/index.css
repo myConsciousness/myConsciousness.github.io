@@ -409,27 +409,27 @@ ol {
 /*---------------------
     Mind
   -----------------------*/
-#mind-list .fas,
-#mind-list .far {
+#mind-list {
+  text-align: center;
+}
+
+#mind-list .mind {
+  margin-top: 20px;
+}
+
+#mind-list .mind .fas,
+#mind-list .mind .far {
   color: #04c2c9;
   font-size: 80px;
 }
 
-.mind {
-  margin-top: 20px;
-}
-
-.mind-title {
+#mind-list .mind .mind-title {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.mind-description {
+#mind-list .mind .mind-description {
   text-align: left;
-}
-
-#mind-list {
-  text-align: center;
 }
 
 @media screen and (max-width: 480px) {

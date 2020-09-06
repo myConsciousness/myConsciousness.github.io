@@ -412,27 +412,27 @@ ol {
     Mind
   -----------------------*/
 
-#mind-list .fas,
-#mind-list .far {
-  color: #04c2c9;
-  font-size: 80px;
-}
-
-.mind {
-  margin-top: 20px;
-}
-
-.mind-title {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.mind-description {
-  text-align: left;
-}
-
 #mind-list {
   text-align: center;
+
+  .mind {
+    margin-top: 20px;
+
+    .fas,
+    .far {
+      color: #04c2c9;
+      font-size: 80px;
+    }
+
+    .mind-title {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .mind-description {
+      text-align: left;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
