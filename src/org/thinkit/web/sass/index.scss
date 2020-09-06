@@ -262,42 +262,46 @@ ol {
   margin-top: -126px;
 }
 
-#contact-information {
+/*---------------------
+    Contact
+  -----------------------*/
+
+#contact-detail {
   width: 100%;
   padding: 60px 0px 100px 0px;
   background: #444957;
   color: #aaaaaa;
   font-size: 17px;
   line-height: 27px;
-}
 
-#contact-information input,
-#contact-information textarea {
-  font-size: 12pt;
-}
+  h6 {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #04c2c9;
+  }
 
-#contact-information h6 {
-  margin-top: 20px;
-  font-size: 25px;
-  color: #04c2c9;
-}
+  input,
+  textarea {
+    font-size: 12pt;
+  }
 
-#contact-information .fab {
-  color: #ffffff;
-  font-size: 40px;
-  padding-right: 10px;
-}
+  .fab {
+    color: #ffffff;
+    font-size: 40px;
+    padding-right: 10px;
+  }
 
-#contact-information .far,
-#contact-information .fas {
-  color: #ffffff;
-  font-size: 40px;
-}
+  .far,
+  .fas {
+    color: #ffffff;
+    font-size: 40px;
+  }
 
-.contact-info {
-  color: #ffffff;
-  margin-top: -3px;
-  padding: 0px;
+  .contact-info {
+    color: #ffffff;
+    margin-top: -3px;
+    padding: 0px;
+  }
 }
 
 #copyright {

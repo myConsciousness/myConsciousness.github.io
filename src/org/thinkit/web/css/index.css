@@ -263,7 +263,10 @@ ol {
   margin-top: -126px;
 }
 
-#contact-information {
+/*---------------------
+    Contact
+  -----------------------*/
+#contact-detail {
   width: 100%;
   padding: 60px 0px 100px 0px;
   background: #444957;
@@ -272,30 +275,30 @@ ol {
   line-height: 27px;
 }
 
-#contact-information input,
-#contact-information textarea {
-  font-size: 12pt;
-}
-
-#contact-information h6 {
+#contact-detail h6 {
   margin-top: 20px;
   font-size: 25px;
   color: #04c2c9;
 }
 
-#contact-information .fab {
+#contact-detail input,
+#contact-detail textarea {
+  font-size: 12pt;
+}
+
+#contact-detail .fab {
   color: #ffffff;
   font-size: 40px;
   padding-right: 10px;
 }
 
-#contact-information .far,
-#contact-information .fas {
+#contact-detail .far,
+#contact-detail .fas {
   color: #ffffff;
   font-size: 40px;
 }
 
-.contact-info {
+#contact-detail .contact-info {
   color: #ffffff;
   margin-top: -3px;
   padding: 0px;
