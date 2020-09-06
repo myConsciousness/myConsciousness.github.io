@@ -363,42 +363,54 @@ ol {
   color: #04c2c9;
 }
 
-#shooting-star,
-#pt {
+/*---------------------
+    Shooting Star
+  -----------------------*/
+
+#shooting-star {
   height: 100%;
   width: 100%;
+
+  #pt {
+    height: 100%;
+    width: 100%;
+
+    &.canvas {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .button {
+    border: 2px solid #04c2c9;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #04c2c9;
+    color: #04c2c9;
+    font-size: 20pt;
+    margin: 5px 0 0 0;
+    outline: 0;
+    padding: 10px 30px;
+    transition: all 0.5s;
+    border-radius: 3px 15px 3px 15px;
+
+    &:focus,
+    &:hover {
+      border: 2px solid #04c2c9;
+      background-color: #04c2c9;
+      color: #fff;
+    }
+  }
 }
 
-.canvas {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#shooting-star .button {
-  border: 2px solid #04c2c9;
-  box-sizing: inherit;
-  cursor: pointer;
-  display: inline-block;
-  background: transparent;
-  border: 2px solid #04c2c9;
-  color: #04c2c9;
-  font-size: 20pt;
-  margin: 5px 0 0 0;
-  outline: 0;
-  padding: 10px 30px;
-  transition: all 0.5s;
-  border-radius: 3px 15px 3px 15px;
-}
-
-#shooting-star .button:focus,
-#shooting-star .button:hover {
-  border: 2px solid #04c2c9;
-  background-color: #04c2c9;
-  color: #fff;
-}
+/*---------------------
+    Mind
+  -----------------------*/
 
 #mind-list .fas,
 #mind-list .far {

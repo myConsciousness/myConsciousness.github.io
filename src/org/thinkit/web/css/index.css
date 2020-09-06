@@ -361,13 +361,20 @@ ol {
   color: #04c2c9;
 }
 
-#shooting-star,
-#pt {
+/*---------------------
+    Shooting Star
+  -----------------------*/
+#shooting-star {
   height: 100%;
   width: 100%;
 }
 
-.canvas {
+#shooting-star #pt {
+  height: 100%;
+  width: 100%;
+}
+
+#shooting-star #pt.canvas {
   height: 100%;
   left: 0;
   position: absolute;
@@ -393,13 +400,15 @@ ol {
   border-radius: 3px 15px 3px 15px;
 }
 
-#shooting-star .button:focus,
-#shooting-star .button:hover {
+#shooting-star .button:focus, #shooting-star .button:hover {
   border: 2px solid #04c2c9;
   background-color: #04c2c9;
   color: #fff;
 }
 
+/*---------------------
+    Mind
+  -----------------------*/
 #mind-list .fas,
 #mind-list .far {
   color: #04c2c9;
