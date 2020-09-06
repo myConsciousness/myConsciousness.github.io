@@ -307,47 +307,6 @@ ol {
 }
 
 /*---------------------
-    Contact
-  -----------------------*/
-#contact-detail {
-  width: 100%;
-  padding: 60px 0px 100px 0px;
-  background: #444957;
-  color: #aaaaaa;
-  font-size: 17px;
-  line-height: 27px;
-}
-
-#contact-detail h6 {
-  margin-top: 20px;
-  font-size: 25px;
-  color: #04c2c9;
-}
-
-#contact-detail input,
-#contact-detail textarea {
-  font-size: 12pt;
-}
-
-#contact-detail .fab {
-  color: #ffffff;
-  font-size: 40px;
-  padding-right: 10px;
-}
-
-#contact-detail .far,
-#contact-detail .fas {
-  color: #ffffff;
-  font-size: 40px;
-}
-
-#contact-detail .contact-info {
-  color: #ffffff;
-  margin-top: -3px;
-  padding: 0px;
-}
-
-/*---------------------
     footer
   -----------------------*/
 #footer #copyright {
