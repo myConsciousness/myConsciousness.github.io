@@ -52,4 +52,11 @@
   background-color: #04c2c9;
   color: #fff;
 }
+
+@media screen and (max-width: 480px) {
+  #shooting-star .button {
+    font-size: 12pt;
+    margin: 0px;
+  }
+}
 /*# sourceMappingURL=shooting-star.css.map */
