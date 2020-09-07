@@ -65,9 +65,19 @@
 @media screen and (max-width: 480px) {
   #about {
     #mind-list {
-      .fas,
-      .far {
-        font-size: 60px;
+      .mind {
+        .fas,
+        .far {
+          font-size: 50px;
+        }
+
+        .mind-title {
+          font-size: 25px;
+        }
+
+        .mind-description {
+          font-size: 15px;
+        }
       }
     }
   }
