@@ -65,6 +65,10 @@
     margin-top: 20px;
     font-size: 25px;
   }
+  #contact #contact-detail input,
+  #contact #contact-detail textarea {
+    font-size: 10pt;
+  }
   #contact #contact-detail .header-divide-white {
     margin: 0 auto;
     text-align: center;
