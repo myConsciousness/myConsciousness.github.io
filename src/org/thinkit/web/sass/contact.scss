@@ -25,11 +25,19 @@
       margin-top: 20px;
       font-size: 25px;
       color: #04c2c9;
+      margin-bottom: 10px;
     }
 
     input,
     textarea {
       font-size: 12pt;
+    }
+
+    .header-divide-white {
+      width: 50px;
+      border-top: 3px solid #ffffff;
+      height: 20px;
+      margin-bottom: 10px;
     }
 
     .fab {
@@ -48,6 +56,40 @@
       color: #ffffff;
       margin-top: -3px;
       padding: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact {
+    #contact-detail {
+      text-align: center;
+
+      h6 {
+        margin-top: 20px;
+        font-size: 25px;
+      }
+
+      .header-divide-white {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .fab {
+        color: #ffffff;
+        font-size: 25px !important;
+        padding-right: 10px;
+      }
+
+      .far,
+      .fas {
+        color: #ffffff;
+        font-size: 25px !important;
+      }
+
+      .contact-info {
+        font-size: 16px;
+      }
     }
   }
 }
