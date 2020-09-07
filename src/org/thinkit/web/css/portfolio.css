@@ -150,4 +150,26 @@
   bottom: 24%;
   opacity: 1;
 }
+
+@media screen and (max-width: 480px) {
+  #portfolio #gallery .mix {
+    width: 40%;
+    display: none;
+    position: relative;
+  }
+  #portfolio #gallery .mix .card {
+    height: 190px;
+  }
+  #portfolio #gallery .mix .text {
+    font-size: 7pt;
+  }
+  #portfolio #gallery .mix .button {
+    width: 100px;
+    font-size: 10px;
+  }
+  #portfolio #gallery .mix .text .bold,
+  #portfolio #gallery .mix .button .bold {
+    font-size: 10pt;
+  }
+}
 /*# sourceMappingURL=portfolio.css.map */

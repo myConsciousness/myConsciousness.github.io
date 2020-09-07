@@ -146,3 +146,35 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  #portfolio {
+    #gallery {
+      .mix {
+        width: 40%;
+        display: none;
+        position: relative;
+
+        .card {
+          height: 190px;
+        }
+
+        .text {
+          font-size: 7pt;
+        }
+
+        .button {
+          width: 100px;
+          font-size: 10px;
+        }
+
+        .text,
+        .button {
+          .bold {
+            font-size: 10pt;
+          }
+        }
+      }
+    }
+  }
+}
