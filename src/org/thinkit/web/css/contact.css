@@ -63,7 +63,7 @@
   }
   #contact #contact-detail h6 {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 30px;
   }
   #contact #contact-detail input,
   #contact #contact-detail textarea {
@@ -75,13 +75,13 @@
   }
   #contact #contact-detail .fab {
     color: #ffffff;
-    font-size: 25px !important;
+    font-size: 30px !important;
     padding-right: 10px;
   }
   #contact #contact-detail .far,
   #contact #contact-detail .fas {
     color: #ffffff;
-    font-size: 25px !important;
+    font-size: 30px !important;
   }
   #contact #contact-detail .contact-info {
     font-size: 16px;
