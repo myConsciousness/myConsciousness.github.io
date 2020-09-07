@@ -152,6 +152,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  #portfolio .filter-wrap .filter {
+    font-size: 15px;
+  }
   #portfolio #gallery .mix {
     width: 40%;
     display: none;
