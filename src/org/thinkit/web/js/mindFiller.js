@@ -52,13 +52,15 @@ const createMindList = () => {
   let mindList = '<div class="row">';
 
   Object.keys(MIND_SET).forEach(function (mind) {
-    mindList += `<div class="col-md-4 col-xs-6 mind">
-                <div class="${MIND_SET[mind][0]}"></div>
-                <h3 class="mind-title"><strong>${mind}</strong></h3>
-                <p class="mind-description">
-                    ${MIND_SET[mind][1]}
-                </p>
-            </div>`;
+    mindList += `<div class="col-md-4 col-xs-6">
+                  <div class="mind">
+                    <div class="${MIND_SET[mind][0]}"></div>
+                    <h3 class="mind-title"><strong>${mind}</strong></h3>
+                    <p class="mind-description">
+                        ${MIND_SET[mind][1]}
+                    </p>
+                  </div>
+                </div>`;
   });
 
   mindList += '</div>';
