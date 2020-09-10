@@ -95,3 +95,21 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  #skill-bars {
+    .skill-bar-item {
+      p {
+        font-size: 10px;
+      }
+
+      .barfiller {
+        height: 4px;
+
+        .tip {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

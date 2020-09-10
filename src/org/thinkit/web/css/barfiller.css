@@ -92,4 +92,16 @@
   top: 100%;
   z-index: 9;
 }
+
+@media screen and (max-width: 480px) {
+  #skill-bars .skill-bar-item p {
+    font-size: 10px;
+  }
+  #skill-bars .skill-bar-item .barfiller {
+    height: 4px;
+  }
+  #skill-bars .skill-bar-item .barfiller .tip {
+    font-size: 10px;
+  }
+}
 /*# sourceMappingURL=barfiller.css.map */
