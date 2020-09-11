@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 let space;
 
 const floatySpace = () => {
-  space = new CanvasSpace('canvas', '#252934').display();
+  space = new CanvasSpace("canvas", "#252934").display();
 
   const center = space.size.$divide(2.2);
   const r = Math.min(space.size.x, space.size.y) * 1;
@@ -15,7 +15,7 @@ const floatySpace = () => {
 
   space.add({
     animate: function (time, fps, context) {
-      const colors = ['#FF3F8E', '#04C2C9', '#43A4E0', '#eeeeee'];
+      const colors = ["#FF3F8E", "#04C2C9", "#43A4E0", "#eeeeee"];
 
       for (let i = 0; i < pts.length; i++) {
         var pt = pts[i];
@@ -37,13 +37,13 @@ const floatySpace = () => {
           if (pts[i].brightness > 0.1) pts[i].brightness -= 0.01;
         }
 
-        var color = 'rgba(255,255,255,' + pts[i].brightness + ')';
+        var color = "rgba(255,255,255," + pts[i].brightness + ")";
         form.stroke(color).fill(true).line(ln);
       }
     },
 
     onMouseAction: function (type, x, y, evt) {
-      if (type == 'move') {
+      if (type == "move") {
         mouse.set(x, y);
       }
     },
@@ -88,6 +88,6 @@ floatySpace();
 
 $(window).resize(function () {
   space.removeAll();
-  $('canvas').remove();
+  $("canvas").remove();
   floatySpace();
 });

@@ -12,44 +12,44 @@
  * the License.
  */
 
-'use strict';
+"use strict";
 
 const PORTFOLIO_SET = {
   ThinkIT: [
-    'web',
-    'HTML5 / CSS3 / JavaScript ES6 / Sass',
-    'https://user-images.githubusercontent.com/13072231/92291515-05186e80-ef54-11ea-80f6-18ed1f5ff2b9.png',
+    "web",
+    "HTML5 / CSS3 / JavaScript ES6 / Sass",
+    "https://user-images.githubusercontent.com/13072231/92291515-05186e80-ef54-11ea-80f6-18ed1f5ff2b9.png",
   ],
-  'SQL Formatter': [
-    'package',
-    'Gradle / Java 14',
-    'https://user-images.githubusercontent.com/13072231/92247281-f608d080-ef01-11ea-8880-7eda6b904968.png',
+  "SQL Formatter": [
+    "package",
+    "Gradle / Java 14",
+    "https://user-images.githubusercontent.com/13072231/92247281-f608d080-ef01-11ea-8880-7eda6b904968.png",
   ],
-  'JSON Formatter': [
-    'package',
-    'Gradle / Java 14',
-    'https://user-images.githubusercontent.com/13072231/92247230-e12c3d00-ef01-11ea-8861-3f648f20e3a5.png',
+  "JSON Formatter": [
+    "package",
+    "Gradle / Java 14",
+    "https://user-images.githubusercontent.com/13072231/92247230-e12c3d00-ef01-11ea-8861-3f648f20e3a5.png",
   ],
-  'Catalog API': [
-    'package',
-    'Gradle / Java 14',
-    'https://user-images.githubusercontent.com/13072231/92294280-bd9ade00-ef65-11ea-87c6-fc8e7b2f41eb.png',
+  "Catalog API": [
+    "package",
+    "Gradle / Java 14",
+    "https://user-images.githubusercontent.com/13072231/92294280-bd9ade00-ef65-11ea-87c6-fc8e7b2f41eb.png",
   ],
-  'Content Framework': [
-    'package',
-    'Gradle / Java 14',
-    'https://user-images.githubusercontent.com/13072231/92306692-084f4100-efcc-11ea-9a54-e6894a4d26f3.png',
+  "Content Framework": [
+    "package",
+    "Gradle / Java 14",
+    "https://user-images.githubusercontent.com/13072231/92306692-084f4100-efcc-11ea-9a54-e6894a4d26f3.png",
   ],
   Duovoc: [
-    'android',
-    'Gradle / Android / Java 8 / SQLite 3',
-    'https://user-images.githubusercontent.com/13072231/92307444-9679f600-efd1-11ea-9506-708298b87c4b.png',
+    "android",
+    "Gradle / Android / Java 8 / SQLite 3",
+    "https://user-images.githubusercontent.com/13072231/92307444-9679f600-efd1-11ea-9506-708298b87c4b.png",
   ],
 };
 
 const createPortfolioList = () => {
-  const portfolioListObject = document.getElementById('gallery');
-  let portfolioList = '';
+  const portfolioListObject = document.getElementById("gallery");
+  let portfolioList = "";
 
   Object.keys(PORTFOLIO_SET).forEach(function (title) {
     portfolioList += `<div class="mix ${PORTFOLIO_SET[title][0]}" data-my-order="1">

@@ -12,21 +12,21 @@
  * the License.
  */
 
-'use strict';
+"use strict";
 
 /**
  * スキルセット
  */
 const SKILL_SET = {
-  'Java 7 ~ 14': 95,
+  "Java 7 ~ 14": 95,
   HTML5: 80,
   CSS3: 70,
   Sass: 65,
-  'JavaScript ES6': 90,
-  'Python 3.x': 75,
-  'Oracle SQL': 80,
+  "JavaScript ES6": 90,
+  "Python 3.x": 75,
+  "Oracle SQL": 80,
   Struts: 90,
-  'Spring Boot': 85,
+  "Spring Boot": 85,
   Bootstrap: 70,
   Android: 75,
 };
@@ -35,9 +35,9 @@ const SKILL_SET = {
  * スキルセットを基にスキルバーを生成しHTMLへ出力します。
  */
 const createSkillBars = () => {
-  const skillBarsObject = document.getElementById('skill-bars');
+  const skillBarsObject = document.getElementById("skill-bars");
 
-  let skillSet = '';
+  let skillSet = "";
   let count = 0;
 
   Object.keys(SKILL_SET).forEach((skill) => {
@@ -63,8 +63,8 @@ createSkillBars();
    */
   function fillSkillBars() {
     for (let i = 1, count = Object.keys(SKILL_SET).length; i <= count; i++) {
-      $('#bar' + String(i)).barfiller({
-        barColor: '#04c2c9',
+      $("#bar" + String(i)).barfiller({
+        barColor: "#04c2c9",
       });
     }
   }
