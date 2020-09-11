@@ -49,7 +49,6 @@ const MIND_SET = {
  */
 const createMindList = () => {
   const mindListObject = document.getElementById("mind-list");
-
   const rowObject = document.createElement("div");
   rowObject.setAttribute("class", "row");
 
@@ -69,6 +68,12 @@ const createMindList = () => {
   });
 };
 
+/**
+ * マインド名を基にマインドのアイコンオブジェクトを生成し返却します。
+ *
+ * @param {String} mind マインド名
+ * @returns マインドのアイコンオブジェクト
+ */
 const getMindIconObject = (mind) => {
   const mindIconObject = document.createElement("div");
   mindIconObject.setAttribute("class", MIND_SET[mind][0]);
@@ -76,6 +81,12 @@ const getMindIconObject = (mind) => {
   return mindIconObject;
 };
 
+/**
+ * マインド名を基にマインドのタイトルオブジェクトを生成し返却します。
+ *
+ * @param {String} mind マインド名
+ * @returns マインドのタイトルオブジェクト
+ */
 const getMindTitleObject = (mind) => {
   const mindTitleObject = document.createElement("h3");
   mindTitleObject.setAttribute("class", "mind-title");
@@ -84,6 +95,12 @@ const getMindTitleObject = (mind) => {
   return mindTitleObject;
 };
 
+/**
+ * マインド名を基にマインドの説明オブジェクトを生成し返却します。
+ *
+ * @param {String} mind マインド名
+ * @returns マインドの説明オブジェクト
+ */
 const getMindDescriptionObject = (mind) => {
   const mindDescriptionObject = document.createElement("p");
   mindDescriptionObject.setAttribute("class", "mind-description");
