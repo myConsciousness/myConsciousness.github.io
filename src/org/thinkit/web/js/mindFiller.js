@@ -50,25 +50,46 @@ const MIND_SET = {
 const createMindList = () => {
   const mindListObject = document.getElementById("mind-list");
 
-  const rowObject = document.createElement("row");
-
-  let mindList = '<div class="row">';
+  const rowObject = document.createElement("div");
+  rowObject.setAttribute("class", "row");
 
   Object.keys(MIND_SET).forEach((mind) => {
-    mindList += `<div class="col-md-4 col-6">
-                  <div class="mind">
-                    <div class="${MIND_SET[mind][0]}"></div>
-                    <h3 class="mind-title"><strong>${mind}</strong></h3>
-                    <p class="mind-description">
-                        ${MIND_SET[mind][1]}
-                    </p>
-                  </div>
-                </div>`;
+    const mindObject = document.createElement("div");
+    mindObject.setAttribute("class", "mind");
+    mindObject.appendChild(getMindIconObject(mind));
+    mindObject.appendChild(getMindTitleObject(mind));
+    mindObject.appendChild(getMindDescriptionObject(mind));
+
+    const gridObject = document.createElement("div");
+    gridObject.setAttribute("class", "col-md-4 col-6");
+    gridObject.appendChild(mindObject);
+
+    rowObject.appendChild(gridObject);
+    mindListObject.appendChild(rowObject);
   });
+};
 
-  mindList += "</div>";
+const getMindIconObject = (mind) => {
+  const mindIconObject = document.createElement("div");
+  mindIconObject.setAttribute("class", MIND_SET[mind][0]);
 
-  mindListObject.innerHTML = mindList;
+  return mindIconObject;
+};
+
+const getMindTitleObject = (mind) => {
+  const mindTitleObject = document.createElement("h3");
+  mindTitleObject.setAttribute("class", "mind-title");
+  mindTitleObject.textContent = mind;
+
+  return mindTitleObject;
+};
+
+const getMindDescriptionObject = (mind) => {
+  const mindDescriptionObject = document.createElement("p");
+  mindDescriptionObject.setAttribute("class", "mind-description");
+  mindDescriptionObject.textContent = MIND_SET[mind][1];
+
+  return mindDescriptionObject;
 };
 
 createMindList();
