@@ -40,7 +40,7 @@ const createSkillBars = () => {
   let skillSet = '';
   let count = 0;
 
-  Object.keys(SKILL_SET).forEach(function (skill) {
+  Object.keys(SKILL_SET).forEach((skill) => {
     skillSet += `<div class="skill-bar-item">
                 <p><strong>${skill}</strong></p>
                 <div id="bar${++count}" class="barfiller">
