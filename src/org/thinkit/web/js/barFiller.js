@@ -42,6 +42,12 @@ const createSkillBars = () => {
   });
 };
 
+/**
+ * スキル名を基にスキルバー項目を生成し返却します。
+ *
+ * @param {String} skill スキル名
+ * @returns スキルバー項目
+ */
 const getSkillBarItemObject = (skill) => {
   const skillBarItemObject = document.createElement("div");
   skillBarItemObject.setAttribute("class", "skill-bar-item");
@@ -51,6 +57,12 @@ const getSkillBarItemObject = (skill) => {
   return skillBarItemObject;
 };
 
+/**
+ * スキル名を基にスキル名オブジェクトを生成し返却します。
+ *
+ * @param {String} skill スキル名
+ * @returns スキル名オブジェクト
+ */
 const getSkillNameObject = (skill) => {
   const skillNameObject = document.createElement("p");
   skillNameObject.textContent = SKILL_SET[skill][0];
@@ -58,6 +70,12 @@ const getSkillNameObject = (skill) => {
   return skillNameObject;
 };
 
+/**
+ * スキル名を基にスキルバーオブジェクトを生成し返却します。
+ *
+ * @param {String} skill スキル名
+ * @returns スキルバーオブジェクト
+ */
 const getBarFillerObject = (skill) => {
   const barFillerObject = document.createElement("div");
   barFillerObject.setAttribute("id", `bar-${skill}`);
