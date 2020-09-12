@@ -18,17 +18,17 @@
  * スキルセット
  */
 const SKILL_SET = {
-  "Java 7 ~ 14": 95,
-  HTML5: 80,
-  CSS3: 70,
-  Sass: 65,
-  "JavaScript ES6": 90,
-  "Python 3.x": 75,
-  "Oracle SQL": 80,
-  Struts: 90,
-  "Spring Boot": 85,
-  Bootstrap: 70,
-  Android: 75,
+  java: ["Java 7 ~ 14", 95],
+  html: ["HTML5", 80],
+  css: ["CSS3", 70],
+  sass: ["Sass", 65],
+  javascript: ["JavaScript ES6", 90],
+  python: ["Python 3.x", 75],
+  sql: ["Oracle SQL", 80],
+  struts: ["Struts", 90],
+  springboot: ["Spring Boot", 85],
+  bootstrap: ["Bootstrap", 70],
+  android: ["Android", 75],
 };
 
 /**
@@ -36,34 +36,44 @@ const SKILL_SET = {
  */
 const createSkillBars = () => {
   const skillBarsObject = document.getElementById("skill-bars");
-  let count = 0;
 
   Object.keys(SKILL_SET).forEach((skill) => {
-    const skillBarItemObject = document.createElement("div");
-    skillBarItemObject.setAttribute("class", "skill-bar-item");
-
-    const skillNameObject = document.createElement("p");
-    skillNameObject.textContent = skill;
-
-    const barFillerObject = document.createElement("div");
-    barFillerObject.setAttribute("id", `bar${++count}`);
-    barFillerObject.setAttribute("class", "barfiller");
-
-    const tipObject = document.createElement("span");
-    tipObject.setAttribute("class", "tip");
-
-    const fillObject = document.createElement("span");
-    fillObject.setAttribute("class", "fill");
-    fillObject.setAttribute("data-percentage", SKILL_SET[skill]);
-
-    barFillerObject.appendChild(tipObject);
-    barFillerObject.appendChild(fillObject);
-
-    skillBarItemObject.appendChild(skillNameObject);
-    skillBarItemObject.appendChild(barFillerObject);
-
-    skillBarsObject.appendChild(skillBarItemObject);
+    skillBarsObject.appendChild(getSkillBarItemObject(skill));
   });
+};
+
+const getSkillBarItemObject = (skill) => {
+  const skillBarItemObject = document.createElement("div");
+  skillBarItemObject.setAttribute("class", "skill-bar-item");
+  skillBarItemObject.appendChild(getSkillNameObject(skill));
+  skillBarItemObject.appendChild(getBarFillerObject(skill));
+
+  return skillBarItemObject;
+};
+
+const getSkillNameObject = (skill) => {
+  const skillNameObject = document.createElement("p");
+  skillNameObject.textContent = SKILL_SET[skill][0];
+
+  return skillNameObject;
+};
+
+const getBarFillerObject = (skill) => {
+  const barFillerObject = document.createElement("div");
+  barFillerObject.setAttribute("id", `bar-${skill}`);
+  barFillerObject.setAttribute("class", "barfiller");
+
+  const tipObject = document.createElement("span");
+  tipObject.setAttribute("class", "tip");
+
+  const fillObject = document.createElement("span");
+  fillObject.setAttribute("class", "fill");
+  fillObject.setAttribute("data-percentage", SKILL_SET[skill][1]);
+
+  barFillerObject.appendChild(tipObject);
+  barFillerObject.appendChild(fillObject);
+
+  return barFillerObject;
 };
 
 createSkillBars();
@@ -75,10 +85,10 @@ createSkillBars();
    * HTMLで設定された "data-percentage" の値を基にスキルバーを出力します。
    */
   function fillSkillBars() {
-    for (let i = 1, count = Object.keys(SKILL_SET).length; i <= count; i++) {
-      $("#bar" + String(i)).barfiller({
+    Object.keys(SKILL_SET).forEach((skill) => {
+      $(`#bar-${skill}`).barfiller({
         barColor: "#04c2c9",
       });
-    }
+    });
   }
 })(jQuery);
