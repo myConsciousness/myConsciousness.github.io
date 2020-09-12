@@ -36,21 +36,34 @@ const SKILL_SET = {
  */
 const createSkillBars = () => {
   const skillBarsObject = document.getElementById("skill-bars");
-
-  let skillSet = "";
   let count = 0;
 
   Object.keys(SKILL_SET).forEach((skill) => {
-    skillSet += `<div class="skill-bar-item">
-                <p><strong>${skill}</strong></p>
-                <div id="bar${++count}" class="barfiller">
-                    <span class="tip"></span>
-                    <span class="fill" data-percentage="${SKILL_SET[skill]}"></span>
-                </div>
-            </div>`;
-  });
+    const skillBarItemObject = document.createElement("div");
+    skillBarItemObject.setAttribute("class", "skill-bar-item");
 
-  skillBarsObject.innerHTML = skillSet;
+    const skillNameObject = document.createElement("p");
+    skillNameObject.textContent = skill;
+
+    const barFillerObject = document.createElement("div");
+    barFillerObject.setAttribute("id", `bar${++count}`);
+    barFillerObject.setAttribute("class", "barfiller");
+
+    const tipObject = document.createElement("span");
+    tipObject.setAttribute("class", "tip");
+
+    const fillObject = document.createElement("span");
+    fillObject.setAttribute("class", "fill");
+    fillObject.setAttribute("data-percentage", SKILL_SET[skill]);
+
+    barFillerObject.appendChild(tipObject);
+    barFillerObject.appendChild(fillObject);
+
+    skillBarItemObject.appendChild(skillNameObject);
+    skillBarItemObject.appendChild(barFillerObject);
+
+    skillBarsObject.appendChild(skillBarItemObject);
+  });
 };
 
 createSkillBars();
