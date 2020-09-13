@@ -17,13 +17,13 @@
     let windowTop = $(window).scrollTop();
     const sectionAboutTop = $("#about").offset().top;
 
-    if (windowTop >= sectionAboutTop) {
+    if (windowTop + 100 >= sectionAboutTop) {
       $("nav").addClass("fixed");
     } else if (windowTop + 50 < sectionAboutTop) {
       $("nav").removeClass("fixed");
     }
 
-    const sectionWindowTop = windowTop + 50;
+    const sectionWindowTop = windowTop + 100;
 
     if (
       sectionWindowTop > $("#contact").offset().top ||
@@ -118,7 +118,7 @@
 
       $("html, body").animate(
         {
-          scrollTop: $("#" + anchor).offset().top,
+          scrollTop: $("#" + anchor).offset().top - 70,
         },
         500
       );
