@@ -37,48 +37,4 @@
       }
     }
   }
-
-  #mind-list {
-    text-align: center;
-
-    .mind {
-      margin-top: 20px;
-
-      .fas,
-      .far {
-        color: #04c2c9;
-        font-size: 80px;
-      }
-
-      .mind-title {
-        margin-top: 15px;
-        margin-bottom: 15px;
-      }
-
-      .mind-description {
-        text-align: left;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #about {
-    #mind-list {
-      .mind {
-        .fas,
-        .far {
-          font-size: 50px;
-        }
-
-        .mind-title {
-          font-size: 22px;
-        }
-
-        .mind-description {
-          font-size: 12px;
-        }
-      }
-    }
-  }
 }
