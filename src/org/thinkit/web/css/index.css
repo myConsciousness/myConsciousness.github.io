@@ -29,10 +29,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
+section {
+  position: relative;
+}
+
+.overflow-wrap {
+  overflow-x: hidden !important;
+}
+
 .flex {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -41,23 +53,23 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .flex.flex-row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .flex.flex-wrap {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -116,7 +128,8 @@ textarea:focus {
   outline: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   outline: none;
   color: #e31b6d;
@@ -149,7 +162,8 @@ ol {
   transition: all 0.5s;
 }
 
-.button-color-white:focus, .button-color-white:hover {
+.button-color-white:focus,
+.button-color-white:hover {
   background-color: #04c2c9;
   border-color: #04c2c9;
 }
@@ -170,7 +184,8 @@ ol {
   border-radius: 3px 15px 3px 15px;
 }
 
-.button-color-turquoise:focus, .button-color-turquoise:hover {
+.button-color-turquoise:focus,
+.button-color-turquoise:hover {
   border: 2px solid #04c2c9;
   background-color: #04c2c9;
   color: #fff;
