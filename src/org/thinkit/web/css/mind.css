@@ -1,0 +1,76 @@
+/*
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+#mind {
+  margin-top: 130px;
+  padding-top: 0;
+}
+
+#mind h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#mind .about-text {
+  padding-top: 70px;
+}
+
+#mind .about-text p {
+  color: #111111;
+  margin-bottom: 35px;
+}
+
+#mind .about-text .section-title {
+  margin-bottom: 28px;
+}
+
+#mind .about-text .section-title h2 {
+  line-height: 55px;
+}
+
+#mind #mind-list {
+  text-align: center;
+}
+
+#mind #mind-list .mind {
+  margin-top: 20px;
+}
+
+#mind #mind-list .mind .fas,
+#mind #mind-list .mind .far {
+  color: #04c2c9;
+  font-size: 80px;
+}
+
+#mind #mind-list .mind .mind-title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#mind #mind-list .mind .mind-description {
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  #about #mind-list .mind .fas,
+  #about #mind-list .mind .far {
+    font-size: 50px;
+  }
+  #about #mind-list .mind .mind-title {
+    font-size: 22px;
+  }
+  #about #mind-list .mind .mind-description {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=mind.css.map */
