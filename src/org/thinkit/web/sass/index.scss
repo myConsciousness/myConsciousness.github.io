@@ -258,18 +258,20 @@ ol {
   #copyright {
     background-color: #2c3039;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     p {
       width: 100%;
-      padding: 30px 0px 30px 0px;
+      padding: 0px;
       text-align: center;
       font-size: 13px;
       letter-spacing: 1px;
-      margin: 0px;
+      margin-top: 0px;
     }
 
     .social-links {
-      margin-bottom: 10px;
+      margin-bottom: 0px;
 
       a {
         color: #ffffff !important;
