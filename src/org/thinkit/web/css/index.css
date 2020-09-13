@@ -294,6 +294,41 @@ ol {
   }
 }
 
+.animated.slide-up {
+  -webkit-animation: slideUp 0.75s ease both;
+          animation: slideUp 0.75s ease both;
+}
+
+.animated.slide-down {
+  -webkit-animation: slideDown 0.75s ease both;
+          animation: slideDown 0.75s ease both;
+}
+
+.animated.slide-in-left {
+  -webkit-animation: slideInLeft 0.75s ease both;
+          animation: slideInLeft 0.75s ease both;
+}
+
+.animated.slide-in-right {
+  -webkit-animation: slideInRight 0.75s ease both;
+          animation: slideInRight 0.75s ease both;
+}
+
+.animated.flip-in-x {
+  -webkit-animation: flipInX 0.75s ease both;
+          animation: flipInX 0.75s ease both;
+}
+
+.animated.fade-in {
+  -webkit-animation: fadeIn 0.75s ease both;
+          animation: fadeIn 0.75s ease both;
+}
+
+.animated.pop-in {
+  -webkit-animation: popIn 1s both;
+          animation: popIn 1s both;
+}
+
 @-webkit-keyframes flipInX {
   from {
     -webkit-animation-timing-function: ease-in;

@@ -299,6 +299,36 @@ ol {
   }
 }
 
+.animated {
+  &.slide-up {
+    animation: slideUp 0.75s ease both;
+  }
+
+  &.slide-down {
+    animation: slideDown 0.75s ease both;
+  }
+
+  &.slide-in-left {
+    animation: slideInLeft 0.75s ease both;
+  }
+
+  &.slide-in-right {
+    animation: slideInRight 0.75s ease both;
+  }
+
+  &.flip-in-x {
+    animation: flipInX 0.75s ease both;
+  }
+
+  &.fade-in {
+    animation: fadeIn 0.75s ease both;
+  }
+
+  &.pop-in {
+    animation: popIn 1s both;
+  }
+}
+
 @keyframes flipInX {
   from {
     -webkit-animation-timing-function: ease-in;
