@@ -32,6 +32,10 @@
       highlightLink("contact");
     } else if (sectionWindowTop > $("#portfolio").offset().top) {
       highlightLink("portfolio");
+    } else if (sectionWindowTop > $("#mind").offset().top) {
+      highlightLink("mind");
+    } else if (sectionWindowTop > $("#skill").offset().top) {
+      highlightLink("skill");
     } else if (sectionWindowTop > $("#about").offset().top) {
       highlightLink("about");
     } else {
