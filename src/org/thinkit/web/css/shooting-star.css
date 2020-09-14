@@ -29,6 +29,28 @@
   width: 100vw;
 }
 
+#shooting-star .text {
+  line-height: 20pt;
+  margin: 0 0 20px 0;
+  pointer-events: none;
+  z-index: 1;
+  text-align: center;
+}
+
+#shooting-star .text p {
+  color: #fff;
+}
+
+#shooting-star .text p:nth-child(1) {
+  font-family: "Rockville Solid";
+  font-size: 80pt;
+}
+
+#shooting-star .text p:nth-child(2) {
+  margin-top: 75px;
+  font-size: 17pt;
+}
+
 #shooting-star .button {
   border: 2px solid #04c2c9;
   -webkit-box-sizing: inherit;
