@@ -11,30 +11,30 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-#about {
+#bio {
   margin-top: 130px;
   padding-top: 0;
 }
 
-#about h1 {
+#bio h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-#about .about-text {
+#bio .about-text {
   padding-top: 70px;
 }
 
-#about .about-text p {
+#bio .about-text p {
   color: #111111;
   margin-bottom: 35px;
 }
 
-#about .about-text .section-title {
+#bio .about-text .section-title {
   margin-bottom: 28px;
 }
 
-#about .about-text .section-title h2 {
+#bio .about-text .section-title h2 {
   line-height: 55px;
 }
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=bio.css.map */
