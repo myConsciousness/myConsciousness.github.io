@@ -13,88 +13,84 @@
  */
 
 #contact {
-  #contact-detail {
-    width: 100%;
-    padding: 60px 0px 100px 0px;
-    background: #444957;
-    color: #aaaaaa;
-    font-size: 17px;
-    line-height: 27px;
+  width: 100%;
+  padding: 0px 0px 100px 0px;
+  background: #444957;
+  color: #aaaaaa;
+  font-size: 17px;
+  line-height: 27px;
+
+  h6 {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #04c2c9;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    font-size: 12pt;
+  }
+
+  .header-divide-white {
+    width: 50px;
+    border-top: 3px solid #ffffff;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .fab {
+    color: #ffffff;
+    font-size: 40px;
+    padding-right: 10px;
+  }
+
+  .far,
+  .fas {
+    color: #ffffff;
+    font-size: 40px;
+  }
+
+  .contact-info {
+    color: #ffffff;
+    margin-top: -3px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact {
+    text-align: center;
 
     h6 {
       margin-top: 20px;
-      font-size: 25px;
-      color: #04c2c9;
-      margin-bottom: 10px;
+      font-size: 30px;
     }
 
     input,
     textarea {
-      font-size: 12pt;
+      font-size: 10pt;
     }
 
     .header-divide-white {
-      width: 50px;
-      border-top: 3px solid #ffffff;
-      height: 20px;
-      margin-bottom: 10px;
+      margin: 0 auto;
+      text-align: center;
     }
 
     .fab {
       color: #ffffff;
-      font-size: 40px;
+      font-size: 30px !important;
       padding-right: 10px;
     }
 
     .far,
     .fas {
       color: #ffffff;
-      font-size: 40px;
+      font-size: 30px !important;
     }
 
     .contact-info {
-      color: #ffffff;
-      margin-top: -3px;
-      padding: 0px;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #contact {
-    #contact-detail {
-      text-align: center;
-
-      h6 {
-        margin-top: 20px;
-        font-size: 30px;
-      }
-
-      input,
-      textarea {
-        font-size: 10pt;
-      }
-
-      .header-divide-white {
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .fab {
-        color: #ffffff;
-        font-size: 30px !important;
-        padding-right: 10px;
-      }
-
-      .far,
-      .fas {
-        color: #ffffff;
-        font-size: 30px !important;
-      }
-
-      .contact-info {
-        font-size: 16px;
-      }
+      font-size: 16px;
     }
   }
 }

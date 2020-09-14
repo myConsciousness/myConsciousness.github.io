@@ -11,79 +11,79 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-#contact #contact-detail {
+#contact {
   width: 100%;
-  padding: 60px 0px 100px 0px;
+  padding: 0px 0px 100px 0px;
   background: #444957;
   color: #aaaaaa;
   font-size: 17px;
   line-height: 27px;
 }
 
-#contact #contact-detail h6 {
+#contact h6 {
   margin-top: 20px;
   font-size: 25px;
   color: #04c2c9;
   margin-bottom: 10px;
 }
 
-#contact #contact-detail input,
-#contact #contact-detail textarea {
+#contact input,
+#contact textarea {
   font-size: 12pt;
 }
 
-#contact #contact-detail .header-divide-white {
+#contact .header-divide-white {
   width: 50px;
   border-top: 3px solid #ffffff;
   height: 20px;
   margin-bottom: 10px;
 }
 
-#contact #contact-detail .fab {
+#contact .fab {
   color: #ffffff;
   font-size: 40px;
   padding-right: 10px;
 }
 
-#contact #contact-detail .far,
-#contact #contact-detail .fas {
+#contact .far,
+#contact .fas {
   color: #ffffff;
   font-size: 40px;
 }
 
-#contact #contact-detail .contact-info {
+#contact .contact-info {
   color: #ffffff;
   margin-top: -3px;
   padding: 0px;
 }
 
 @media screen and (max-width: 480px) {
-  #contact #contact-detail {
+  #contact {
     text-align: center;
   }
-  #contact #contact-detail h6 {
+  #contact h6 {
     margin-top: 20px;
     font-size: 30px;
   }
-  #contact #contact-detail input,
-  #contact #contact-detail textarea {
+  #contact input,
+  #contact textarea {
     font-size: 10pt;
   }
-  #contact #contact-detail .header-divide-white {
+  #contact .header-divide-white {
     margin: 0 auto;
     text-align: center;
   }
-  #contact #contact-detail .fab {
+  #contact .fab {
     color: #ffffff;
     font-size: 30px !important;
     padding-right: 10px;
   }
-  #contact #contact-detail .far,
-  #contact #contact-detail .fas {
+  #contact .far,
+  #contact .fas {
     color: #ffffff;
     font-size: 30px !important;
   }
-  #contact #contact-detail .contact-info {
+  #contact .contact-info {
     font-size: 16px;
   }
 }
