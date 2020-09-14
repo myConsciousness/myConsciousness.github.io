@@ -15,11 +15,11 @@
 
   $(window).scroll(function () {
     let windowTop = $(window).scrollTop();
-    const sectionAboutTop = $("#about").offset().top;
+    const sectionBioTop = $("#bio").offset().top;
 
-    if (windowTop + 100 >= sectionAboutTop) {
+    if (windowTop + 100 >= sectionBioTop) {
       $("nav").addClass("fixed");
-    } else if (windowTop + 50 < sectionAboutTop) {
+    } else if (windowTop + 50 < sectionBioTop) {
       $("nav").removeClass("fixed");
     }
 
