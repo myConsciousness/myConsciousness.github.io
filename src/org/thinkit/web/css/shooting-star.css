@@ -76,6 +76,13 @@
 }
 
 @media screen and (max-width: 480px) {
+  #shooting-star .text p:nth-child(1) {
+    font-size: 55pt;
+  }
+  #shooting-star .text p:nth-child(2) {
+    font-size: 12pt;
+    margin-top: 50px;
+  }
   #shooting-star .button {
     font-size: 12pt;
     margin: 0px;
