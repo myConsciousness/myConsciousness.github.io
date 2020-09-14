@@ -21,23 +21,6 @@
     margin-bottom: 20px;
   }
 
-  .about-text {
-    padding-top: 70px;
-
-    p {
-      color: #111111;
-      margin-bottom: 35px;
-    }
-
-    .section-title {
-      margin-bottom: 28px;
-
-      h2 {
-        line-height: 55px;
-      }
-    }
-  }
-
   #mind-list {
     text-align: center;
 
@@ -63,7 +46,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  #about {
+  #mind {
     #mind-list {
       .mind {
         .fas,
