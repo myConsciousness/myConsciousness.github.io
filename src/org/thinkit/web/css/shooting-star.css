@@ -12,18 +12,18 @@
  * the License.
  */
 #shooting-star {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 #shooting-star #pt {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 #shooting-star #pt.canvas {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   left: 0;
   position: absolute;
   top: 0;
