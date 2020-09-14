@@ -36,8 +36,8 @@
       highlightLink("mind");
     } else if (sectionWindowTop > $("#skill").offset().top) {
       highlightLink("skill");
-    } else if (sectionWindowTop > $("#about").offset().top) {
-      highlightLink("about");
+    } else if (sectionWindowTop > $("#bio").offset().top) {
+      highlightLink("bio");
     } else {
       highlightLink("shooting-star");
     }
