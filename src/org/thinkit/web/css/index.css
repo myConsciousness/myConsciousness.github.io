@@ -23,7 +23,7 @@ html,
 body {
   height: 100%;
   color: #fff;
-  font-family: "Now Regular";
+  font-family: Raleway;
   font-size: 8pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -102,7 +102,7 @@ h6 {
 
 p {
   font-size: 15px;
-  font-family: "Now Regular";
+  font-family: Raleway;
   color: #444444;
   font-weight: 400;
   line-height: 26px;
