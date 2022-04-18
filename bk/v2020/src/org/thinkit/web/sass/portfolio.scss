@@ -1,0 +1,184 @@
+/*
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+#portfolio {
+  background: #bfbfbf;
+  padding-bottom: 200px;
+  margin-top: 150px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .filter-wrap {
+    position: relative;
+    white-space: nowrap;
+
+    .filter {
+      color: #1b242f;
+      cursor: pointer;
+      font-size: 15pt;
+      font-weight: 600;
+      padding: 0 20px;
+      transition: background-color 0.5s;
+    }
+
+    .float-bar {
+      bottom: 0;
+      left: 30px;
+      position: absolute;
+      top: 0;
+      background: #e31b6d;
+      border-radius: 1px;
+      height: 25px;
+      margin: auto 0;
+      overflow: hidden;
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+
+      .flex-row {
+        bottom: 0;
+        left: -30px;
+        position: absolute;
+        top: 0;
+        margin: auto 0;
+        transition: left 0.5s ease-in-out;
+
+        .filter {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  #gallery {
+    flex-wrap: nowrap;
+    margin: 20px 0;
+
+    .mix {
+      width: 30%;
+      display: none;
+      position: relative;
+
+      &.waypoint {
+        background: #fff;
+      }
+
+      .card {
+        height: 240px;
+        max-width: 100%;
+        transition: opacity 0.5s;
+        width: calc(50vw - 8px);
+      }
+
+      .text {
+        font-size: 9pt;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .button {
+        cursor: pointer;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        border: 2px solid #e31b6d;
+        font-size: 13pt;
+        margin: 0 auto;
+        padding: 7px 0;
+        width: 170px;
+
+        &:hover {
+          background: #e31b6d;
+          color: #fff;
+        }
+      }
+
+      .text,
+      .button {
+        color: #1b242f;
+        opacity: 0;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+
+        .bold {
+          font-size: 16pt;
+        }
+      }
+
+      &:hover {
+        .card {
+          opacity: 0;
+        }
+
+        .text {
+          cursor: default;
+          opacity: 1;
+          top: 24%;
+        }
+
+        .button {
+          bottom: 24%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #portfolio {
+    .filter-wrap {
+      .filter {
+        font-size: 15px;
+      }
+    }
+
+    #gallery {
+      .mix {
+        width: 40%;
+        display: none;
+        position: relative;
+
+        .card {
+          height: 190px;
+        }
+
+        .text {
+          font-size: 7pt;
+        }
+
+        .button {
+          width: 100px;
+          font-size: 10px;
+        }
+
+        .text,
+        .button {
+          .bold {
+            font-size: 10pt;
+          }
+        }
+      }
+    }
+  }
+}

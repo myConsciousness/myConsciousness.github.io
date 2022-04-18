@@ -1,0 +1,90 @@
+/*
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+#contact {
+  width: 100%;
+  padding: 0px 0px 100px 0px;
+  background: #444957;
+  color: #aaaaaa;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+#contact h6 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #04c2c9;
+  margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+  font-size: 12pt;
+}
+
+#contact .header-divide-white {
+  width: 50px;
+  border-top: 3px solid #ffffff;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+#contact .fab {
+  color: #ffffff;
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+#contact .far,
+#contact .fas {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+#contact .contact-info {
+  color: #ffffff;
+  margin-top: -3px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  #contact {
+    text-align: center;
+  }
+  #contact h6 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  #contact input,
+  #contact textarea {
+    font-size: 10pt;
+  }
+  #contact .header-divide-white {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #contact .fab {
+    color: #ffffff;
+    font-size: 30px !important;
+    padding-right: 10px;
+  }
+  #contact .far,
+  #contact .fas {
+    color: #ffffff;
+    font-size: 30px !important;
+  }
+  #contact .contact-info {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

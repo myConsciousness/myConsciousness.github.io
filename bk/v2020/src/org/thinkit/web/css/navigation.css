@@ -1,0 +1,107 @@
+/*
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+}
+
+nav.fixed {
+  bottom: inherit;
+  left: 0;
+  position: fixed;
+  top: 0;
+  -webkit-animation: popDown 1s;
+          animation: popDown 1s;
+}
+
+nav .link-wrap {
+  max-width: 1200px;
+  overflow: hidden;
+  top: 53px;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  width: 100%;
+  background: none;
+  height: initial;
+  overflow: visible;
+  position: initial;
+}
+
+nav .link-wrap div {
+  display: inline-block;
+  background: #1b242f;
+  color: #fff;
+  border: unset;
+  cursor: pointer;
+  font-size: 12pt;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+nav .link-wrap div.active {
+  color: #e31b6d;
+}
+
+nav .link-wrap div:hover {
+  background: #1b242f;
+  color: #e31b6d;
+}
+
+nav .link-wrap.visible {
+  height: 220px;
+}
+
+nav .link-wrap .fa-bars {
+  display: none;
+  font-size: 30pt;
+  line-height: 36pt;
+  margin: auto 0;
+  position: absolute;
+  right: 5vw;
+  top: 0;
+}
+
+@media screen and (max-width: 480px) {
+  nav .link-wrap {
+    background: none;
+  }
+  nav .link-wrap div {
+    font-size: 7pt;
+    padding: 10px 17px;
+  }
+}
+
+@-webkit-keyframes popDown {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes popDown {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+/*# sourceMappingURL=navigation.css.map */

@@ -1,0 +1,66 @@
+/*
+ * Copyright 2020 Kato Shinya.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+#mind {
+  padding-top: 0;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #mind-list {
+    text-align: center;
+
+    .mind {
+      margin-top: 20px;
+
+      .fas,
+      .far {
+        color: #04c2c9;
+        font-size: 80px;
+      }
+
+      .mind-title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .mind-description {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #mind {
+    #mind-list {
+      .mind {
+        .fas,
+        .far {
+          font-size: 50px;
+        }
+
+        .mind-title {
+          font-size: 22px;
+        }
+
+        .mind-description {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
