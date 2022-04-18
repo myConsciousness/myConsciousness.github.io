@@ -28,15 +28,13 @@ nav.fixed {
   left: 0;
   position: fixed;
   top: 0;
-  -webkit-animation: popDown 1s;
-          animation: popDown 1s;
+  animation: popDown 1s;
 }
 
 nav .link-wrap {
   max-width: 1200px;
   overflow: hidden;
   top: 53px;
-  -webkit-transition: height 0.5s ease-out;
   transition: height 0.5s ease-out;
   width: 100%;
   background: none;
@@ -54,7 +52,6 @@ nav .link-wrap div {
   font-size: 12pt;
   padding: 12px 20px;
   text-transform: uppercase;
-  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -91,17 +88,9 @@ nav .link-wrap .fa-bars {
   }
 }
 
-@-webkit-keyframes popDown {
-  0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-
 @keyframes popDown {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
 }
 /*# sourceMappingURL=navigation.css.map */

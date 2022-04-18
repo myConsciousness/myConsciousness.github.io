@@ -36,7 +36,6 @@
   font-size: 15pt;
   font-weight: 600;
   padding: 0 20px;
-  -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
@@ -51,7 +50,6 @@
   margin: auto 0;
   overflow: hidden;
   position: absolute;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -61,7 +59,6 @@
   position: absolute;
   top: 0;
   margin: auto 0;
-  -webkit-transition: left 0.5s ease-in-out;
   transition: left 0.5s ease-in-out;
 }
 
@@ -70,8 +67,7 @@
 }
 
 #portfolio #gallery {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   margin: 20px 0;
 }
 
@@ -88,7 +84,6 @@
 #portfolio #gallery .mix .card {
   height: 240px;
   max-width: 100%;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   width: calc(50vw - 8px);
 }
@@ -124,7 +119,6 @@
   color: #1b242f;
   opacity: 0;
   text-align: center;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
